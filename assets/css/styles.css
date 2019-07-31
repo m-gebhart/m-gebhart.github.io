@@ -1,3 +1,7 @@
-.current { color: green; }
+.nav .current { color: red; }
+
+.nav .default { color: gray; }
+
+.nav { text-align: center; padding: 14px 16px; text-decoration: none; }
 
 .project { color: blue; }
