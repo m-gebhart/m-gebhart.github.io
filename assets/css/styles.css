@@ -1,7 +1,5 @@
-.nav .current { color: red; }
+.default { color: black; }
 
-.nav .default { color: gray; }
-
-.nav { text-align: center; padding: 14px 16px; text-decoration: none; }
+.current { background-color: #4CAF50; }
 
 .project { color: blue; }

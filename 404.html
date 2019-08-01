@@ -1,9 +1,26 @@
 <!doctype html>
 <html>
   <head>
+  <style>
+    h1 {
+      margin-top: 70px;
+    }
+    li a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: gray;
+    }
+  </style>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
     <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="michael-gebhart.github.io" />
     <!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>michael-gebhart.github.io</title>
@@ -18,28 +35,45 @@
   </head>
   <body>
     <nav>
+  <ul style="list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;">
     
-      <a href="/" class = "nav default">
+      <li > <a href="/" 
+	>    
         Home
-      </a>
+      </a> </li>
     
-      <a href="/about.html" class = "nav default">
+      <li > <a href="/about.html" 
+	>    
         About
-      </a>
+      </a> </li>
     
-      <a href="/projects.html" class = "nav default">
+      <li > <a href="/projects.html" 
+	>    
         Projects
-      </a>
+      </a> </li>
     
-      <a href="/cv.html" class = "nav default">
+      <li > <a href="/cv.html" 
+	>    
         CV
-      </a>
+      </a> </li>
     
-      <a href="contact.html" class = "nav default">
+      <li 
+	style = "float: right;"
+        > <a href="contact.html" 
+	>    
         Contact
-      </a>
+      </a> </li>
     
+  </ul>
 </nav>
+
     <style type="text/css" media="screen">
   .container {
     margin: 10px auto;
