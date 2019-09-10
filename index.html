@@ -1,26 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-  <style>
-    h1 {
-      margin-top: 70px;
-    }
-    li a {
-      float: left;
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    li a:hover:not(.active) {
-      background-color: gray;
-    }
-  </style>
+<head>
     <meta charset="utf-8">
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="michael-gebhart.github.io" />
     <!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>Home | michael-gebhart.github.io</title>
@@ -32,55 +15,43 @@
 {"headline":"Home","@type":"WebSite","url":"/","name":"michael-gebhart.github.io","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-  </head>
-  <body>
-    <nav>
-  <ul style="list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  width: 100%;">
-    
-      <li > <a href="/" 
-	
-	style = "text-decoration: underline;
-	text-decoration-color: red;"
-        >    
-        Home
-      </a> </li>
-    
-      <li > <a href="/about.html" 
-	>    
-        About
-      </a> </li>
-    
-      <li > <a href="/projects.html" 
-	>    
-        Projects
-      </a> </li>
-    
-      <li > <a href="/cv.html" 
-	>    
-        CV
-      </a> </li>
-    
-      <li 
-	style = "float: right;"
-        > <a href="contact.html" 
-	>    
-        Contact
-      </a> </li>
-    
-  </ul>
-</nav>
+    <script>
+    </script>
+</head>
 
+<body>
+    <script src="menuScript.js"></script>
+<div class="topnav" id="topnavID">
+    <nav>
+        <ul>
+            
+            <li>
+                <a href="/"  style="text-decoration: underline; text-decoration-color: red;" > Home </a>
+            </li> 
+            <li>
+                <a href="/about.html" > About </a>
+            </li> 
+            <li>
+                <a href="/projects.html" > Projects </a>
+            </li> 
+            <li>
+                <a href="/cv.html" > CV </a>
+            </li> 
+            <li>
+                <a href="contact.html" > Contact </a>
+            </li> 
+            <li class="icon">
+                <a href="javascript:toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
     <h1 id="michael-gebhart">Michael Gebhart</h1>
 
 <p>Game. Play. Programming.</p>
 
-     <p> Because Games Matter... </p> 
-  </body>
+    <p> Because Games Matter... </p>
+</body>
 </html>
