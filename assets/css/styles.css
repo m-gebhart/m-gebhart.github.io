@@ -116,7 +116,8 @@ body {
 }
 
 
-/*---- Footer Data ----*/
+/*---- Footer Data ----/*
+/*template used from freecodecamp*/
 .viewport {
     position: relative;
     min-height: 100vh;
