@@ -78,7 +78,7 @@ body {
     display: none;
 }
 
-/*--- Mobile Navigation Menu ----*/
+/*---- Mobile Navigation Menu ----*/
 @media screen and (max-width: 700px) {
     .topnav li:not(:first-child) {
         display: none;
@@ -105,4 +105,33 @@ body {
         display: block;
         text-align: center;
     }
+}
+
+
+/*---- Contact Data ----*/
+.logo {
+    width: 40px;
+    margin-top: 2%;
+    margin-right: 6%;
+}
+
+
+/*---- Footer Data ----*/
+.viewport {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content.all {
+    padding-bottom: 2.5rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.3rem;
+    text-align: center;
+    display: inline-block;
+    background-color: lightgray;
 }
