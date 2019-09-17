@@ -2,8 +2,9 @@
 
 
 /*WORK IN PROGRESS - to-do:
-    - change from px to em / rem scale for images, fonts etc.
-    - navbar not working for /projects/[project] yet
+    - change from px to em / rem / vh scale for images, fonts etc.
+    - add dropdown to projects in navabr
+    - improve visuals and content
 */
 
 /*---- General ----*/
@@ -15,13 +16,19 @@ body {
     margin-top: 90px;
 }
 
-    .header.home {
-        text-align: center;
-        margin-bottom: 3%;
-    }
+.header.home {
+    text-align: center;
+    margin-bottom: 3%;
+}
 
 .header.standard {
     margin-left: 25%; 
+}
+
+.content.all {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 2.5rem;
 }
 
 .content.standard {
@@ -34,8 +41,7 @@ body {
     justify-content: center;
 }
 
-
-/*--- Thumbnails on Index / Home page---*/
+/*---- Home Page / Thumbnails ---*/
 .highlights {
     position: relative;    
     left: 3%; 
@@ -57,9 +63,14 @@ body {
     max-width: 60%;
 }
 
+iframe {
+    width: 560px;
+    height: 315px;
+}
 /*---- Navigation Menu ----*/
-.topnav ul{
+.topnav ul {
     overflow: hidden;
+    z-index: 1;
     background-color: black;
     list-style-type: none;
     margin: 0;
@@ -89,7 +100,7 @@ body {
 }
 
 /*---- Mobile Navigation Menu ----*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .topnav li:not(:first-child) {
         display: none;
     }
@@ -101,6 +112,7 @@ body {
 
     .topnav.responsive {
         position: relative;
+        z-index: 1;
     }
 
     .topnav.responsive li.icon {
@@ -117,7 +129,7 @@ body {
     }
 
 
-    /* ---- Mobile Highlights Section ----*/
+    /*---- Mobile Highlights Section ----*/
 
     .highlights {
         display: flex;
@@ -138,6 +150,18 @@ body {
         margin-left: -10px;
         height: 175px;
     }
+
+    /*---- Mobile Video Element ----*/
+
+    .video-frame{
+        position: relative;
+    }
+
+    iframe {
+        align-content: center;
+        width: 100%;
+        height: auto;
+    }
 }
 
 
@@ -149,17 +173,7 @@ body {
 }
 
 
-/*---- Footer Data ----/*
-/*template used from freecodecamp*/
-.viewport {
-    min-height: 100vh;
-    position: relative;
-}
-
-.content.all {
-    padding-bottom: 2.5rem;
-}
-
+/*---- Footer Data ----*/
 .footer {
     position: relative;
     bottom: 0;
