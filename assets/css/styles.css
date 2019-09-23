@@ -1,4 +1,4 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"); /*three lined navbar icon*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"); /*three lined navbar icon - might get replaced with an own icon*/
 
 
 /*WORK IN PROGRESS - to-do:
@@ -161,6 +161,21 @@ iframe {
         align-content: center;
         width: 100%;
         height: auto;
+    }
+
+    /*---- Mobile Content ----*/
+    .header.standard {
+        margin-left: 15%;
+    }
+
+    .content.standard {
+        position: absolute;
+        left: 15%;
+        right: 15%;
+        margin: auto;
+        line-height: 1.5;
+        text-align: justify;
+        justify-content: center;
     }
 }
 
