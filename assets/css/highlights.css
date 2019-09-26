@@ -1,0 +1,75 @@
+/*---- Home Highlights Section ---*/
+.highlights {
+    background-color: black;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container {
+    flex: 30%;
+    padding: 8px;
+    max-width: 100%;
+    margin: 1vw auto;
+    left: 0;
+}
+
+.container.thumbnail {
+    display: block !important;
+    position: relative;
+    height: 18vw;
+    width: auto;
+    margin: auto !important;
+    justify-content: center;
+}
+
+.container.thumbnail:hover{
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+
+.container.title {
+    position: relative;
+    font-size: 2vw;
+    text-align: center;
+    left: 0;
+    top: -50%;
+    color: white;
+    z-index: -1;
+}
+
+/*---- Mobile Highlights Section ----*/
+@media screen and (max-width: 800px) {
+    .highlights {
+        background-color: black;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        left: 0;
+        z-index: 1;
+    }
+
+    .container {
+        flex: 100%;
+        padding: 0 10px;
+        margin: 1vw auto;
+        left: 0;
+    }
+
+    .container.thumbnail {
+        height: 40vw;
+        width: auto;
+        margin: auto !important;
+    }
+
+    .container.title {
+        color: white;
+        font-size: 5vw;
+        text-align: center;
+        left: 0;
+        z-index: -1;
+    }
+}

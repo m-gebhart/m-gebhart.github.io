@@ -1,0 +1,80 @@
+/*---- General ----*/
+html{
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    margin-top: 90px;
+}
+
+.header.home {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.header.standard {
+    margin-left: 25%; 
+}
+
+.content.all {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+.content.standard {
+    position: absolute;  
+    left: 25%;  
+    right: 25%;
+    margin: auto;
+    line-height: 1.6;
+    text-align: justify;
+    justify-content: center;
+}
+
+iframe {
+    width: 40rem;
+    height: 20rem;
+}
+
+
+/*---- Mobile Video Element ----*/
+@media screen and (max-width: 800px) {
+    .video-frame {
+        position: relative;
+    }
+
+    iframe {
+        align-content: center;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*---- Mobile Content ----*/
+@media screen and (max-width: 800px) {
+    .header.standard {
+        margin-left: 15%;
+    }
+
+    .content.standard {
+        position: absolute;
+        left: 15%;
+        right: 15%;
+        margin: auto;
+        line-height: 1.5;
+        text-align: justify;
+        justify-content: center;
+    }
+}
+
+/*---- Contact Data ----*/
+.logo {
+    width: 40px;
+    margin-top: 2%;
+    margin-right: 6%;
+}
