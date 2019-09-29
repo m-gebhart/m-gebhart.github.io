@@ -1,12 +1,10 @@
 /*---- Footer Data ----*/
 .footer {
-    position: absolute;
+    position: relative;
     color: white;
     bottom: 0;
     z-index: -1;
     width: 100%;
     text-align: center;
-    display: inline-block;
     background-color: black;
-    margin-top: 0;
 }

@@ -1,14 +1,15 @@
 /*---- Navigation Menu ----*/
 .topnav ul {
-    overflow: hidden;
-    z-index: 1;
     background-color: black;
+    z-index: 1;
     list-style-type: none;
     margin: 0;
     padding: 0;
     position: fixed;
     top: 0;
     width: 100%;
+    font-family: HelvLight, 'Segoe UI', sans-serif;
+    z-index: 2;
 }
 
 .topnav li a {
@@ -19,11 +20,12 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    transition: font-size 0.35s ease-in;
 }
 
 .topnav li a:hover:not(.active) {
-    background-color: gray;
-    transition: background-color 0.35s;
+    font-size: 19px;
+    transition: font-size 0.35s ease-in;
 }
 
 .topnav .icon {
@@ -34,6 +36,7 @@
 @media screen and (max-width: 800px) {
     .topnav li:not(:first-child) {
         display: none;
+        z-index: 5;
     }
 
     .topnav li.icon {
@@ -43,7 +46,6 @@
 
     .topnav.responsive {
         position: relative;
-        z-index: 1;
     }
 
     .topnav.responsive li.icon {

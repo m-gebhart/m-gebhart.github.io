@@ -1,7 +1,7 @@
 /*---- Home Highlights Section ---*/
 .highlights {
-    background-color: black;
     position: relative;
+    background-color: black;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -10,29 +10,30 @@
 
 .container {
     flex: 30%;
-    padding: 8px;
     max-width: 100%;
-    margin: 1vw auto;
+    padding: 16px;
+    margin: 1vw 0vw;
     left: 0;
+    font-family: HelvLight, 'Segoe UI', sans-serif;
 }
 
 .container.thumbnail {
     display: block !important;
     position: relative;
-    height: 18vw;
+    height: 16vw;
     width: auto;
     margin: auto !important;
     justify-content: center;
 }
 
-.container.thumbnail:hover{
+.container.thumbnail:hover {
     opacity: 0.3;
     transition: opacity 0.3s;
 }
 
 .container.title {
     position: relative;
-    font-size: 2vw;
+    font-size: 1.9vw;
     text-align: center;
     left: 0;
     top: -50%;
@@ -43,7 +44,6 @@
 /*---- Mobile Highlights Section ----*/
 @media screen and (max-width: 800px) {
     .highlights {
-        background-color: black;
         position: relative;
         display: flex;
         flex-wrap: wrap;
@@ -60,7 +60,7 @@
     }
 
     .container.thumbnail {
-        height: 40vw;
+        height: 42vw;
         width: auto;
         margin: auto !important;
     }

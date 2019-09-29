@@ -1,14 +1,21 @@
 /*---- General ----*/
-html{
+html {
     height: 100%;
 }
 
 body {
     margin: 0;
+    z-index: 1;
+}
+
+p {
+    font-family: 'Segoe UI', Georgia, sans-serif;
 }
 
 .header {
+    background-image: ;
     margin-top: 90px;
+    font-family: HelvLight, 'Segoe UI', sans-serif;
 }
 
 .header.home {
@@ -17,23 +24,24 @@ body {
 }
 
 .header.standard {
-    margin-left: 25%; 
+    margin-left: 25%;
 }
 
-.content.all {
-    min-height: 100vh;
-    position: relative;
-    padding-bottom: 4rem;
-}
+    .content.all {
+        min-height: 120vh;
+        position: relative;
+        padding-bottom: 4rem;
+    }
 
 .content.standard {
-    position: absolute;  
-    left: 25%;  
+    position: absolute;
+    left: 25%;
     right: 25%;
     margin: auto;
     line-height: 1.6;
     text-align: justify;
     justify-content: center;
+    display: block;
 }
 
 iframe {
