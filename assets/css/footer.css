@@ -7,4 +7,7 @@
     width: 100%;
     text-align: center;
     background-color: black;
+    border-top: solid;
+    border-top-color: white;
+    border-width: 1px;
 }

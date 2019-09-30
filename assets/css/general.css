@@ -6,32 +6,48 @@ html {
 body {
     margin: 0;
     z-index: 1;
+    background-color: black;
 }
 
 p {
     font-family: 'Segoe UI', Georgia, sans-serif;
+    color: white;
+}
+
+ul {
+    color: white;
 }
 
 .header {
-    background-image: ;
+    display: block;
     margin-top: 90px;
     font-family: HelvLight, 'Segoe UI', sans-serif;
+    color: white;
 }
 
 .header.home {
     text-align: center;
-    margin-bottom: 3%;
+    overflow: visible;
+    background-image: url("/assets/pictures/reel.gif");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    padding: 16vw 0vw;
+    margin: 0;
+    font-size: 0.9rem;
 }
 
 .header.standard {
     margin-left: 25%;
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 
-    .content.all {
-        min-height: 120vh;
-        position: relative;
-        padding-bottom: 4rem;
-    }
+.content.all {
+    min-height: 120vh;
+    position: relative;
+    padding-bottom: 4rem;
+}
 
 .content.standard {
     position: absolute;
