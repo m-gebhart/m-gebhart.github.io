@@ -11,7 +11,7 @@
 .container {
     flex: 30%;
     max-width: 100%;
-    padding: 16px;
+    padding: 0px 10px 16px 10px;
     margin: 1vw 0vw;
     left: 0;
     font-family: HelvLight, 'Segoe UI', sans-serif;
@@ -20,7 +20,7 @@
 .container.thumbnail {
     display: block !important;
     position: relative;
-    height: 16vw;
+    height: 14vw;
     width: auto;
     margin: auto !important;
     justify-content: center;
@@ -33,7 +33,7 @@
 
 .container.title {
     position: relative;
-    font-size: 1.9vw;
+    font-size: 1.7vw;
     text-align: center;
     left: 0;
     top: -50%;

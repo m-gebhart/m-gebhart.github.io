@@ -39,7 +39,6 @@ ul {
 
 .header.standard {
     margin-left: 25%;
-    text-decoration: underline;
     text-decoration-color: white;
 }
 
@@ -63,6 +62,14 @@ ul {
 iframe {
     width: 40rem;
     height: 20rem;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited{
+    color: white;
 }
 
 
