@@ -37,6 +37,16 @@ ul {
     font-size: 0.9rem;
 }
 
+.header.home h1{
+    font-size: 2rem;
+    transition: font-size 0.6s;
+}
+
+.header.home h1:hover{
+    font-size: 3rem;
+    transition: font-size 0.4s;
+}
+
 .header.standard {
     margin-left: 25%;
     text-decoration-color: white;
