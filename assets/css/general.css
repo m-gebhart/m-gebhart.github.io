@@ -7,6 +7,9 @@ body {
     margin: 0;
     z-index: 1;
     background-color: black;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
 }
 
 p {
@@ -64,13 +67,13 @@ ul {
     display: block;
 }
 
-    .content.standard h2 {
-        font-family: HelvLight, 'Segoe UI', sans-serif;
-    }
+.content.standard h2 {
+    font-family: HelvLight, 'Segoe UI', sans-serif;
+}
 
-    .content.standard a:link{
-        text-decoration: none;
-    }
+.content.standard a:link{
+    text-decoration: none;
+}
 
 iframe {
     width: 40rem;
@@ -100,7 +103,7 @@ a:visited{
 }
 
 /*---- Mobile Content ----*/
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 700px) {
     .header.standard {
         margin-left: 15%;
     }
@@ -134,15 +137,22 @@ a:visited{
 .home.logos {
     display: flex !important;
     flex: 30%;
-    padding: 25px 10vw;
+    padding: 2vw 10vw;
     position: relative;
     justify-content: center;
 }
 
-    .home.logos img {
-        height: 45px;
-        width: auto;
-        position: relative;
-        display: block !important;
-        margin: 25px 20px !important;
+.home.logos img {
+    height: 45px;
+    width: auto;
+    position: relative;
+    display: block !important;
+    margin: 20px !important;
+}
+
+@media screen and (max-width: 700px) {
+    .home.logos img
+    {
+        height: 10vw;
     }
+}

@@ -36,7 +36,7 @@
 }
 
 /*---- Mobile Navigation Menu ----*/
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 700px) {
     .topnav li:not(:first-child) {
         display: none;
         z-index: 5;
