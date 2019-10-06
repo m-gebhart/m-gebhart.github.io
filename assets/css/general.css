@@ -34,17 +34,12 @@ ul {
     background-size: 100vw auto;
     padding: 16vw 0vw;
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .header.home h1{
     font-size: 2rem;
     transition: font-size 0.6s;
-}
-
-.header.home h1:hover{
-    font-size: 3rem;
-    transition: font-size 0.4s;
 }
 
 .header.standard {
@@ -68,6 +63,14 @@ ul {
     justify-content: center;
     display: block;
 }
+
+    .content.standard h2 {
+        font-family: HelvLight, 'Segoe UI', sans-serif;
+    }
+
+    .content.standard a:link{
+        text-decoration: none;
+    }
 
 iframe {
     width: 40rem;
@@ -97,9 +100,17 @@ a:visited{
 }
 
 /*---- Mobile Content ----*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 630px) {
     .header.standard {
         margin-left: 15%;
+    }
+
+    .header.home p{
+        font-size: 3.5vw;
+    }
+
+    .header.home h1{
+        font-size: 5.5vw;
     }
 
     .content.standard {
@@ -114,8 +125,24 @@ a:visited{
 }
 
 /*---- Contact Data ----*/
-.logo {
+.contact.logo {
     width: 40px;
     margin-top: 2%;
     margin-right: 6%;
 }
+
+.home.logos {
+    display: flex !important;
+    flex: 30%;
+    padding: 25px 10vw;
+    position: relative;
+    justify-content: center;
+}
+
+    .home.logos img {
+        height: 45px;
+        width: auto;
+        position: relative;
+        display: block !important;
+        margin: 25px 20px !important;
+    }
