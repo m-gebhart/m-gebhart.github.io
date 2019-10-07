@@ -89,9 +89,9 @@
     .highlights p {
         display: flex;
         flex: 100%;
-        margin: -3rem auto 0.5rem auto;
-        font-size: 4.5vw;
-        text-decoration: none;
+        margin: -1.3rem auto 0.5rem auto;
+        font-size: 4.75vw;
+        text-decoration: underline;
     }
 
 

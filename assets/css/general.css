@@ -35,7 +35,7 @@ ul {
     background-position: left;
     background-repeat: no-repeat;
     background-size: 100vw auto;
-    padding: 16vw 0vw;
+    padding: 16vw 0vw 14vw;
     margin: 0;
     font-size: 1rem;
 }
@@ -125,6 +125,15 @@ a:visited{
         text-align: justify;
         justify-content: center;
     }
+
+    body {
+        margin: 0;
+        z-index: 1;
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto 100vh;
+    }
 }
 
 /*---- Contact Data ----*/
@@ -147,7 +156,7 @@ a:visited{
     width: auto;
     position: relative;
     display: block !important;
-    margin: 20px !important;
+    margin: 25px !important;
 }
 
 @media screen and (max-width: 700px) {
