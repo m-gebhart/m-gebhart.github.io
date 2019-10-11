@@ -1,0 +1,26 @@
+.project-container {
+    display: flex;
+    height: auto;
+    margin: 2vw 10%;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.project-container.title {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.project-container.thumbnail {
+    height: 40vw;
+    max-height: 35%;
+    width: auto;
+    margin: auto;
+}
+
+.project-container.preview {
+    text-justify: inter-word;
+    margin-left: 20%;
+    margin-right: 20%;
+}

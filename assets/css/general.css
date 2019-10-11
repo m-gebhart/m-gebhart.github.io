@@ -17,8 +17,17 @@ p {
     color: white;
 }
 
+p2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
 ul {
     color: white;
+}
+
+.link {
+    text-decoration: underline;
 }
 
 .header {

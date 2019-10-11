@@ -67,7 +67,7 @@
     .container {
         flex: 100%;
         padding: 0 10px;
-        margin: 2vw auto 4vw;
+        margin: 3vw auto 2.5vw;
         left: 0;
     }
 
@@ -93,6 +93,4 @@
         font-size: 4.75vw;
         text-decoration: underline;
     }
-
-
 }
