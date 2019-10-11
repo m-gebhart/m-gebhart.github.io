@@ -21,6 +21,32 @@
 
 .project-container.preview {
     text-justify: inter-word;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.project.allScreenshots::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.project.screenshot {
+    float: left;
+    width: 30vw;
+}
+
+.project.screenshot img {
+    width: 30vw;
+    height: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .project-container.preview {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: justify;
+        text-justify: inter-word;
+        justify-content: center;
+    }
 }
