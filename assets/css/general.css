@@ -26,6 +26,10 @@ ul {
     color: white;
 }
 
+li {
+    font-family: HelvLight, 'Segoe UI', sans-serif;
+}
+
 .link {
     text-decoration: underline;
 }
