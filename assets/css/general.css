@@ -24,11 +24,7 @@ p2 {
 
 ul {
     color: white;
-    font-family: HelvLight, 'Segoe UI', sans-serif;
-}
-
-li {
-    font-family: HelvLight, 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', Helvetica, sans-serif;
 }
 
 .link {
