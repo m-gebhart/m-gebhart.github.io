@@ -1,0 +1,35 @@
+.popUpBackground {
+    display: inline;
+    position: fixed;
+    z-index: 1;
+    color: white;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.popUpBox {
+    background-color: darkblue;
+    display: inline;
+    position: fixed;
+    width: 5%;
+    height: 5%;
+    z-index: 2;
+    top: -200px;
+}
+
+.openBox {
+    transition-duration: 1s;
+    transition-delay: 1s;
+    transition-timing-function: ease;
+    padding: 20px;
+    top: 5%;
+    left: 5%;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 80%;
+    height: 80%;
+}

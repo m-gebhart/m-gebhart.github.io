@@ -1,17 +1,2 @@
-/*WORK IN PROGRESS - to-do:
-    - change from px to em / rem / vh scale for images, fonts etc.
-    - fix footer location //change location for each page individually
-    - add dropdown to projects in navbar
-    - create own icon (navbar) for navbar
-    - overall improvement visuals and content
-    - check mobile version
-    - add links to code snippets
-*/
-
-@import url("/assets/css/general.css");
-@import url("/assets/css/highlights.css");
-@import url("/assets/css/navigation.css");
-@import url("/assets/css/footer.css");
-@import url("/assets/css/projects.css");
-
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("general.css");
+@import url("popUp.css");
