@@ -13,7 +13,7 @@ body {
 }
 
 p {
-    font-family: 'Segoe UI', Helvetica, sans-serif;
+    font-family: 'Segoe UI', Georgia, sans-serif;
     color: white;
 }
 
@@ -24,7 +24,6 @@ p2 {
 
 ul {
     color: white;
-    font-family: 'Segoe UI', Helvetica, sans-serif;
 }
 
 .link {
@@ -98,6 +97,10 @@ a:visited{
     color: white;
 }
 
+.pic_trailer img {
+    width: auto;
+    height: 20rem;
+}
 
 /*---- Mobile Video Element ----*/
 @media screen and (max-width: 800px) {

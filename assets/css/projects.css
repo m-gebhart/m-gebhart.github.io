@@ -1,7 +1,6 @@
 .project-container {
     display: flex;
-    height: auto;
-    margin: 2vw 10%;
+    flex-wrap: wrap;
     justify-content: center;
     position: relative;
     text-align: center;
@@ -13,40 +12,15 @@
 }
 
 .project-container.thumbnail {
-    height: 40vw;
+    height: 40%;
     max-height: 35%;
     width: auto;
     margin: auto;
+    display: block;
 }
 
 .project-container.preview {
     text-justify: inter-word;
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
-
-.project.allScreenshots::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.project.screenshot {
-    float: left;
-    width: 30vw;
-}
-
-.project.screenshot img {
-    width: 30vw;
-    height: auto;
-}
-
-@media screen and (max-width: 700px) {
-    .project-container.preview {
-        margin-left: 0;
-        margin-right: 0;
-        text-align: justify;
-        text-justify: inter-word;
-        justify-content: center;
-    }
+    margin-left: 20%;
+    margin-right: 20%;
 }
