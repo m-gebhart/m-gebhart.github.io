@@ -10,19 +10,12 @@ body {
     background-position: left;
     background-repeat: no-repeat;
     background-size: 100vw auto;
-}
-
-p {
     font-family: 'Segoe UI', Georgia, sans-serif;
     color: white;
 }
 
 p2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-}
-
-ul {
     color: white;
 }
 
