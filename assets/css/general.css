@@ -4,23 +4,52 @@ html {
 }
 
 body {
+    font-family: 'Segoe UI', Georgia, sans-serif;
     margin: 0;
     z-index: 1;
-    background-color: black;
-    background-position: left;
-    background-repeat: no-repeat;
+    background: black no-repeat left;
     background-size: 100vw auto;
-    font-family: 'Segoe UI', Georgia, sans-serif;
     color: white;
 }
 
-p2 {
+.aboutMe {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    font-size: medium;
 }
 
-.link {
-    text-decoration: underline;
+.aboutMe p{
+    line-height: 170%;
+}
+
+.aboutMe p2{
+    font-size: smaller;
+}
+
+.cv li{
+    line-height: 190%;
+}
+
+.cv ul {
+    margin-bottom: 5%;
+}
+
+.linkButton {
+    text-align: center;
+    display: inline;
+    padding: 1% 2%;
+    font-size: small;
+    margin: auto 4vh auto 0;
+    border: solid rgba(255, 255, 255, 0.7) 1px;
+    border-radius: 5px;
+}
+
+.bulletPoints {
+    margin-top: 5vh;
+}
+
+.linkButton:hover {
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .header {
@@ -33,12 +62,11 @@ p2 {
 .header.home {
     text-align: center;
     overflow: visible;
-    background-image: url("/assets/pictures/reel.gif");
-    background-position: left;
-    background-repeat: no-repeat;
+    background: black url("/assets/pictures/reel.gif") no-repeat left;
     background-size: 100vw auto;
     padding: 16vw 0vw 14vw;
     margin: 0;
+    margin-bottom: -1rem;
     font-size: 1rem;
 }
 
@@ -84,16 +112,13 @@ iframe {
 
 a:link {
     color: white;
+    transition-duration: 0.5s;
 }
 
 a:visited{
     color: white;
 }
 
-.pic_trailer img {
-    width: auto;
-    height: 20rem;
-}
 
 /*---- Mobile Video Element ----*/
 @media screen and (max-width: 800px) {
@@ -135,9 +160,7 @@ a:visited{
     body {
         margin: 0;
         z-index: 1;
-        background-color: black;
-        background-position: center;
-        background-repeat: no-repeat;
+        background: black no-repeat center;
         background-size: auto 100vh;
     }
 }

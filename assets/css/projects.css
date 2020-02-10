@@ -13,8 +13,8 @@
 
 .project-container.thumbnail {
     width: auto;
-    min-width: 80%;
-    max-width: 90%;
+    max-width: 100%;
+    max-height: 40vh;
     margin: auto;
 }
 
@@ -23,4 +23,20 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15%;
+}
+
+.pic_trailer img {
+    width: auto;
+    height: 20rem;
+}
+
+.projectContent a:link {
+    text-decoration: underline solid rgba(255, 255, 255, 0.3);
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition-duration: 0.5s;
+}
+
+.projectContent a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
 }

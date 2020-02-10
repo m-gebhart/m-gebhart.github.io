@@ -1,11 +1,9 @@
 /*WORK IN PROGRESS - to-do:
     - change from px to em / rem / vh scale for images, fonts etc.
     - fix footer location //change location for each page individually
-    - add dropdown to projects in navbar
+    - add dropdown to projects in navbar (?)
     - create own icon (navbar) for navbar
-    - overall improvement visuals and content
-    - check mobile version
-    - add links to code snippets
+    - overall improvement visuals and content /mobile version
 */
 
 @import url("/assets/css/general.css");

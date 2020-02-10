@@ -1,7 +1,6 @@
 /*---- Home Highlights Section ---*/
 .highlights {
     position: relative;
-    background-color: black;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -45,7 +44,7 @@
 
 .container.title {
     position: relative;
-    font-size: 1.7vw;
+    font-size: 1.3rem;
     text-align: center;
     left: 0;
     top: -50%;
@@ -56,41 +55,26 @@
 /*---- Mobile Highlights Section ----*/
 @media screen and (max-width: 700px) {
     .highlights {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
         left: 0;
-        z-index: 1;
+    }
+
+    .highlights p {
+        margin: 2rem auto 0.5rem auto;
+        font-size: 1.7rem;
     }
 
     .container {
         flex: 100%;
         padding: 0 10px;
-        margin: 3vw auto 2.5vw;
-        left: 0;
+        margin: 3vw 4vw 2.5vw;
     }
 
     .container.thumbnail {
         height: 42vw;
-        width: auto;
-        margin: auto !important;
     }
 
     .container.title {
-        position: relative;
-        color: white;
-        font-size: 4vw;
-        text-align: center;
-        left: 0;
-        z-index: -1;
-    }
-
-    .highlights p {
-        display: flex;
-        flex: 100%;
-        margin: -1.3rem auto 0.5rem auto;
-        font-size: 4.75vw;
-        text-decoration: underline;
+        font-size: 1.5rem;
     }
 }
