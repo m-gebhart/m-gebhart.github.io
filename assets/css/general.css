@@ -33,6 +33,7 @@ body {
 }
 
 .cv ul {
+    left: -5vw;
     font-size: large;
     margin-bottom: 4vh;
 }
@@ -145,7 +146,7 @@ a:visited{
 /*---- Mobile Content ----*/
 @media screen and (max-width: 700px) {
     .header.standard {
-        margin-left: 15%;
+        margin-left: 10%;
     }
 
     .header.home p{
@@ -158,8 +159,8 @@ a:visited{
 
     .content.standard {
         position: absolute;
-        left: 15%;
-        right: 15%;
+        left: 10%;
+        right: 10%;
         margin: auto;
         line-height: 1.5;
         text-align: justify;
