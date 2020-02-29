@@ -4,7 +4,8 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Georgia, sans-serif;
+    /*font-family: 'Segoe UI', Verdana, sans-serif;*/
+    font-family: HelvLight, 'Segoe UI', sans-serif;
     margin: 0;
     z-index: 1;
     background: black no-repeat left;
@@ -13,7 +14,7 @@ body {
 }
 
 .aboutMe {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     color: white;
     font-size: medium;
 }
@@ -26,13 +27,25 @@ body {
     font-size: smaller;
 }
 
-.cv li{
-    line-height: 190%;
+.cv {
+    text-align: left !important;
+    font-family: 'Segoe UI', Verdana, Geneva, sans-serif;
 }
 
 .cv ul {
-    margin-bottom: 5%;
+    font-size: large;
+    margin-bottom: 4vh;
 }
+
+.cv ul li{
+    line-height: 180%;
+}
+
+.cv ul li ul {
+    font-size: medium;
+    margin-top: 0.5vh;
+}
+
 
 .linkButton {
     text-align: center;
@@ -42,10 +55,6 @@ body {
     margin: auto 4vh auto 0;
     border: solid rgba(255, 255, 255, 0.7) 1px;
     border-radius: 5px;
-}
-
-.bulletPoints {
-    margin-top: 5vh;
 }
 
 .linkButton:hover {

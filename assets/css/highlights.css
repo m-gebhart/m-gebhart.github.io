@@ -8,7 +8,6 @@
 }
 
 .highlights p {
-    font-family: HelvLight, 'Segoe UI', sans-serif;
     display: flex;
     flex: 100%;
     margin: -2rem auto 0.5rem auto;
@@ -23,9 +22,8 @@
     flex: 30%;
     max-width: 100%;
     padding: 0px 10px 16px 10px;
-    margin: 1vw 0vw;
+    margin: 1vh 0vw;
     left: 0;
-    font-family: HelvLight, 'Segoe UI', sans-serif;
 }
 
 .container.thumbnail {
@@ -33,7 +31,8 @@
     position: relative;
     height: 14vw;
     width: auto;
-    margin: auto !important;
+    margin: auto;
+    margin-top: 3vh;
     justify-content: center;
 }
 
