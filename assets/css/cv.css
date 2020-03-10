@@ -1,0 +1,19 @@
+.cv {
+    text-align: left !important;
+    font-family: 'Segoe UI', Verdana, Geneva, sans-serif;
+}
+
+.cv ul {
+    left: -5vw;
+    font-size: large;
+    margin-bottom: 4vh;
+}
+
+.cv ul li{
+    line-height: 180%;
+}
+
+.cv ul li ul {
+    font-size: medium;
+    margin-top: 0.5vh;
+}

@@ -1,0 +1,13 @@
+.aboutMe {
+    font-family: Tahoma, Verdana, sans-serif;
+    color: white;
+    font-size: medium;
+}
+
+.aboutMe p{
+    line-height: 170%;
+}
+
+.aboutMe p2{
+    font-size: smaller;
+}

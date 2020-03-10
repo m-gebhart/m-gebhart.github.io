@@ -12,41 +12,6 @@ body {
     color: white;
 }
 
-.aboutMe {
-    font-family: Tahoma, Verdana, sans-serif;
-    color: white;
-    font-size: medium;
-}
-
-.aboutMe p{
-    line-height: 170%;
-}
-
-.aboutMe p2{
-    font-size: smaller;
-}
-
-.cv {
-    text-align: left !important;
-    font-family: 'Segoe UI', Verdana, Geneva, sans-serif;
-}
-
-.cv ul {
-    left: -5vw;
-    font-size: large;
-    margin-bottom: 4vh;
-}
-
-.cv ul li{
-    line-height: 180%;
-}
-
-.cv ul li ul {
-    font-size: medium;
-    margin-top: 0.5vh;
-}
-
-
 .linkButton {
     text-align: center;
     display: inline;
@@ -78,11 +43,6 @@ body {
     font-size: 1rem;
 }
 
-.header.home h1{
-    font-size: 2rem;
-    transition: font-size 0.6s;
-}
-
 .header.standard {
     margin-left: 25%;
     text-decoration-color: white;
@@ -105,46 +65,50 @@ body {
     display: block;
 }
 
-.content.standard h2 {
-    font-family: HelvLight, 'Segoe UI', sans-serif;
+h1 {
+    font-size: 2rem;
 }
 
-.content.standard a:link{
-    text-decoration: none;
+h2 {
+    display: flex;
+    flex: 100%;
+    font-weight: lighter;
+    margin: 0 auto 0.5rem;
+    font-size: 1.6rem;
+    justify-content: center;
+    padding-top: 0.5rem;
+    text-decoration: underline;
 }
 
-iframe {
-    width: 40rem;
-    height: 20rem;
+h3 {
+    position: relative;
+    font-size: 110%;
+    text-align: center;
+    left: 0;
+    top: 50%;
+    color: white;
+    z-index: -1;
 }
 
 a:link {
     color: white;
     transition-duration: 0.5s;
+    text-decoration: none;
 }
 
 a:visited{
     color: white;
 }
 
-
-/*---- Mobile Video Element ----*/
-@media screen and (max-width: 800px) {
-    .video-frame {
-        position: relative;
-    }
-
-    iframe {
-        align-content: center;
-        width: 100%;
-        height: auto;
-    }
-}
-
 /*---- Mobile Content ----*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
     .header.standard {
         margin-left: 10%;
+    }
+
+    .header.home {
+        background: black url("/assets/pictures/reel_low-res.gif") no-repeat left;
+        background-size: 100vw auto;
     }
 
     .header.home p{
@@ -153,6 +117,13 @@ a:visited{
 
     .header.home h1{
         font-size: 5.5vw;
+    }
+
+    h3 {
+        margin: 2rem auto 0;
+        font-size: 130%;
+        text-decoration: underline;
+        text-decoration-style: dashed;
     }
 
     .content.standard {
@@ -170,40 +141,5 @@ a:visited{
         z-index: 1;
         background: black no-repeat center;
         background-size: auto 100vh;
-    }
-}
-
-/*---- Contact Data ----*/
-.contact.logo {
-    width: 40px;
-    margin-top: 2%;
-    margin-right: 6%;
-}
-
-.home.logos {
-    display: flex !important;
-    flex: 30%;
-    padding: 2vw 10vw;
-    position: relative;
-    justify-content: center;
-}
-
-.home.logos img {
-    height: 45px;
-    width: auto;
-    position: relative;
-    display: block !important;
-    margin: 25px !important;
-}
-
-@media screen and (max-width: 700px) {
-    .home.logos img
-    {
-        height: 10vw;
-    }
-
-    .pic_trailer img {
-        width: 80%;
-        height: auto;
     }
 }

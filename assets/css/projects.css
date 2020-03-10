@@ -40,3 +40,22 @@
 .projectContent a:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
+
+
+iframe {
+    width: 40rem;
+    height: 20rem;
+}
+
+/*---- Mobile Video Element ----*/
+@media screen and (max-width: 850px) {
+    .video-frame {
+        position: relative;
+    }
+
+    iframe {
+        align-content: center;
+        width: 100%;
+        height: auto;
+    }
+}
