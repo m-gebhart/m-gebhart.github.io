@@ -83,6 +83,7 @@ h2 {
 h3 {
     position: relative;
     font-size: 110%;
+    font-weight: normal;
     text-align: center;
     left: 0;
     top: 50%;
