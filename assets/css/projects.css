@@ -6,8 +6,7 @@
 }
 
 .project-container.title {
-    font-weight: bolder;
-    text-transform: uppercase;
+    font-weight: normal !important;
     text-decoration: underline;
 }
 
@@ -26,8 +25,8 @@
 }
 
 .pic_trailer img {
-    width: auto;
-    height: 20rem;
+    width: 100%;
+    height: auto;
 }
 
 .projectContent a:link {
@@ -43,8 +42,9 @@
 
 
 iframe {
-    width: 40rem;
-    height: 20rem;
+    width: 100%;
+    height: auto;
+    min-height: 20rem;
 }
 
 /*---- Mobile Video Element ----*/

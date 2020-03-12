@@ -1,6 +1,5 @@
 /*---- Navigation Menu ----*/
 .topnav ul {
-    font-family: HelvLight, 'Segoe UI', sans-serif;
     background-color: black;
     border-bottom: white solid 1px;
     z-index: 1;
@@ -16,7 +15,6 @@
 .topnav li a {
     float: left;
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -60,5 +58,9 @@
         float: none;
         display: block;
         text-align: center;
+    }
+
+    .topnav.responsive li:not(:last-child) {
+        opacity: 0;
     }
 }
