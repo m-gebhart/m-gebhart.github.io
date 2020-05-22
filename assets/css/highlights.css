@@ -59,21 +59,20 @@
     display: flex;
     flex: 40%;
     flex-direction: row;
-    padding: 2vw 10vw;
     position: relative;
     justify-content: center;
 }
 
 .home.logos img {
-    height: 45px;
+    height: 3.5vw;
     width: auto;
+    margin: 3vw;
     position: relative;
     display: block !important;
-    margin: 25px !important;
 }
 
 @media screen and (max-width: 850px) {
     .home.logos img {
-        height: 10vw;
+        height: 8.5vw;
     }
 }
