@@ -5,7 +5,7 @@
 
 .cv ul {
     left: -5vw;
-    font-size: large;
+    font-size: medium;
     margin-bottom: 4vh;
 }
 
@@ -14,6 +14,6 @@
 }
 
 .cv ul li ul {
-    font-size: medium;
+    font-size: small;
     margin-top: 0.5vh;
 }
