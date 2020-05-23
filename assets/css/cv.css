@@ -3,17 +3,14 @@
     font-family: 'Segoe UI', Verdana, Geneva, sans-serif;
 }
 
-.cv ul {
-    left: -5vw;
-    font-size: medium;
-    margin-bottom: 4vh;
+.cv table {
+    margin-top: 4vh;
+    border-spacing: 20px 10px;
 }
 
-.cv ul li{
-    line-height: 180%;
-}
-
-.cv ul li ul {
-    font-size: small;
-    margin-top: 0.5vh;
+.cv table tr th {
+    vertical-align: top;
+    text-align: right;
+    width: 20%;
+    font-weight: normal;
 }
