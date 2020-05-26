@@ -37,6 +37,10 @@
     margin: 2vh 0;
 }
 
+.gallery img {
+    max-width: 50%;
+}
+
 .projectContent a:link {
     text-decoration: underline solid rgba(255, 255, 255, 0.3);
     font-style: italic;
