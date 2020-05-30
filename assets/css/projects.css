@@ -66,8 +66,13 @@ iframe {
         width: 100%;
         height: auto;
     }
-    
+
+    .gallery {
+        display: block;
+    }
+
     .gallery img {
-        max-width: 400px;
+        width: 85vw;
+        height: auto;
     }
 }
