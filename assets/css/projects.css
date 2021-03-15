@@ -29,7 +29,7 @@
     height: auto;
 }
 
-.gallery {
+.gallery img {
     width: 100%;
     display: flex;
     flex: 50%;
