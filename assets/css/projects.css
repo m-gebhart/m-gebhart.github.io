@@ -30,7 +30,7 @@
 }
 
 .gallery img {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex: 50%;
     flex-direction: row;
