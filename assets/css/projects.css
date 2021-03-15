@@ -29,8 +29,8 @@
     height: auto;
 }
 
-.gallery {
-    width: 100%;
+.gallery img {
+    max-width: 100%;
     display: flex;
     flex: 50%;
     flex-direction: row;
