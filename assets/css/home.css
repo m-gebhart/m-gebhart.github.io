@@ -90,6 +90,10 @@ h3 {
     z-index: -1;
 }
 
+.sub h3 {
+  font-size: 90%;
+}
+
 a:link {
     color: white;
     transition-duration: 0.5s;
