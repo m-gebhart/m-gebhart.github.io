@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: HelvLight, 'Segoe UI', Verdana, sans-serif;
+    font-family: HelvLight, "Segoe UI", Verdana, sans-serif;
     margin: 0;
     z-index: 1;
     background: black no-repeat left;
@@ -39,13 +39,28 @@ body {
     background-size: 100vw auto;
     padding: 16vw 0vw 14vw;
     margin: 0;
-    margin-bottom: -1rem;
     font-size: 1rem;
 }
+
+.header.home h1 {
+    margin-left: inherit;
+    display: inherit;
+    margin-bottom: 0;
+}
+
+.header.home p {left: 0}
 
 .header.standard {
     margin-left: 25%;
     text-decoration-color: white;
+    display: inline;
+}
+
+.header p {
+    position: relative;
+    display: inline-flex;
+    left: 25%;
+    right: 25%;
 }
 
 .content.all {
@@ -67,6 +82,9 @@ body {
 
 h1 {
     font-size: 2rem;
+    margin-left: 25%;
+    display: flex;
+    margin-top: 3rem;
 }
 
 h2 {
@@ -77,7 +95,7 @@ h2 {
     font-size: 1.6rem;
     justify-content: center;
     padding-top: 0.5rem;
-    text-decoration: underline;
+    border-bottom: solid 1px #333333;
 }
 
 h3 {
@@ -107,6 +125,13 @@ a:visited{
         margin-left: 10%;
     }
 
+    .header p {
+        position: relative;
+        display: inline-flex;
+        left: 10%;
+        right: 10%;
+    }
+
     .header.home {
         background: black url("/assets/pictures/reel_low-res.gif") no-repeat left;
         background-size: 100vw auto;
@@ -114,6 +139,7 @@ a:visited{
 
     .header.home p{
         font-size: 3.5vw;
+        left: 0%;
     }
 
     .header.home h1{
@@ -123,8 +149,6 @@ a:visited{
     h3 {
         margin: 2rem auto 0;
         font-size: 130%;
-        text-decoration: underline;
-        text-decoration-style: dashed;
     }
 
     .content.standard {
