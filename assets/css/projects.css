@@ -24,6 +24,10 @@
     margin-bottom: 15%;
 }
 
+.projectContent {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+}
+
 .pic_trailer img {
     max-width: 100%;
     height: auto;
