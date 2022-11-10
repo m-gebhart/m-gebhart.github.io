@@ -9,6 +9,8 @@ body {
     z-index: 1;
     background: black no-repeat left;
     background-size: 100vw auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
 }
 
