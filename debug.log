@@ -1,0 +1,6 @@
+[0310/131947.114:ERROR:viz_main_impl.cc(170)] Exiting GPU process due to errors during initialization
+[0310/131948.551:WARNING:gpu_process_host.cc(1205)] The GPU process has crashed 1 time(s)
+[0310/131950.956:ERROR:viz_main_impl.cc(170)] Exiting GPU process due to errors during initialization
+[0310/132010.714:ERROR:viz_main_impl.cc(170)] Exiting GPU process due to errors during initialization
+[0310/132010.755:WARNING:gpu_process_host.cc(1205)] The GPU process has crashed 2 time(s)
+[0310/132051.108:INFO:CONSOLE(1)] "Uncaught ReferenceError: toggleMenu is not defined", source: file:///D:/Michael/Documents/m-gebhart.github.io/projects.html (1)
