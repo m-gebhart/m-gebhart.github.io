@@ -55,8 +55,7 @@
 
 iframe {
     width: 100%;
-    height: auto;
-    min-height: 20rem;
+    min-height: 28rem;
 }
 
 pgp-gif {
