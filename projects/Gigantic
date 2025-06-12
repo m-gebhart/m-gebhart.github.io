@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=1.5, minimum-scale=1.0">
+    <title>Gigantic: Rampage Edition | Michael Gebhart</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="michael-gebhart.github.io" />
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Gigantic | michael-gebhart.github.io</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Mayhaemsters" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="GIGANTIC: RAMPAGE EDITION is a premium and definitive release of the original 5v5 MOBA Hero Shooter, GIGANTIC, that provides a dynamic and exciting team-based multiplayer experience for fans of both genres. Choose from a diverse roster of unique heroes, each with a set of upgradeable abilities, and team up with four other players to control objectives and take down the opposing team’s mighty Guardian, all while protecting your own."/>
+<meta property="og:description" content="GIGANTIC: RAMPAGE EDITION is a premium and definitive release of the original 5v5 MOBA Hero Shooter, GIGANTIC, that provides a dynamic and exciting team-based multiplayer experience for fans of both genres. Choose from a diverse roster of unique heroes, each with a set of upgradeable abilities, and team up with four other players to control objectives and take down the opposing team’s mighty Guardian, all while protecting your own."/>
+<meta property="og:site_name" content="michael-gebhart.github.io" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-06-20T15:55:27+02:00" />
+<script type="application/ld+json">
+{"dateModified":"2025-06-12T15:55:27+02:00","datePublished":"2025-06-12T15:55:27+02:00","description":"GIGANTIC: RAMPAGE EDITION is a premium and definitive release of the original 5v5 MOBA Hero Shooter, GIGANTIC, that provides a dynamic and exciting team-based multiplayer experience for fans of both genres. Choose from a diverse roster of unique heroes, each with a set of upgradeable abilities, and team up with four other players to control objectives and take down the opposing team’s mighty Guardian, all while protecting your own.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/Mayhaemsters.html"},"url":"/projects/Mayhaemsters.html","headline":"Mayhaemsters","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body style= "background-image: url(/assets/pictures/mayhaemsters_bg.png);">
+    <div class="content all">
+        <script src="/menuScript.js"></script>
+<div class="topnav" id="topnavID">
+    <nav>
+        <ul>
+            <li><a href="/" > Home</a></li>
+            <li><a href="/about.html" > About</a></li>
+            <!--<li><a href="/projects.html" > Projects</a></li>-->
+            <li><a href="/cv.html" > CV</a></li>
+            <li><a href="/contact.html" > Contact</a></li>
+            <li class="icon"><a href="javascript:toggleMenu()"><i class="fa fa-bars"></i></a></li>
+        </ul>
+    </nav>
+</div>
+
+        <div class="header standard">
+            <h1></h1>
+        </div>
+
+        <div class="header standard">
+    <h2> Mayhaemsters</h2>
+    <p>2020 &middot; 5v5 MOBA Hero Shooter &middot; Commercial Project (1+ years) &middot; Unreal Engine 3 / C++ / UnrealScript / ActionScript / Scaleform / Flash</p>
+</div>
+<div class="content standard">
+    <div class="video-frame">
+        <p><iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/BfFXIuzvfZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+
+    <div class="projectContent">
+        <p>Description coming soon...</p>
+
+        <p><br /><b> Developer:</b> Abstraction Games (original release by Motiga)</p>
+        <p><br /><b> Publisher:</b> Arc Games</p>
+        <!--<p class="link"><a href="/projects.html"> See All Projects</a></p>-->
+    </div>
+</div>
+    </div>
+</body>
+</html>
