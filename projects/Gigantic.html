@@ -55,15 +55,15 @@
         <p>My responsibilities mostly consisted of UI programming to increase accessibility and usability despite the technical debt warranted by Unreal Engine 3 and Flash. Later, I also worked on other game programming aspects to fix and create combat and attack behaviour for single heroes.</p>
         <p>Footer action bar: For the user's front-end screen experience, I worked on the general footer bar that appears across many menu systems, e.g., the inventory, shop or settings screen. It dynamically loads in button prompt elements dependent on the currently selected item. My responsibilities were:</p>
         <ul>
-            <li>introducing support for dynamic animations, i.e., a ring-like "filling-up" animation around button images to indicate held buttons of in-progress actions.</li>
+            <li>introducing support for dynamic animations, i.e., a ring-like "filling-up" animation around button images to indicate held buttons of in-progress actions (e.g., purchase actions).</li>
             <li>ensuring consistent spacing and enumerations of elements, including:</li>
             <ul>
                 <li>loading in button images either next to or in-between text characters. This is also dependent on the chosen language or input type (gamepad / mouse).</li>
                 <li>a priority system that keeps a consistent position index of certain actions (e.g., "ESC" or "Back" always first) independent from data sheets definitions.</li>
-                <li>contextual positioning that moves the footer bar horizontally based on distance to other near objects, e.g., prevent overlaps with party member block in bottom corner.</li>
+                <li>contextual positioning that relatively moves the footer bar horizontally based on distance to other near objects, e.g., prevent overlaps with party member block in bottom corner.</li>
             </ul>
         </ul>
-        <p>Loadout Controls: For the character builds screen, I implemented custom controls by introducing a drag'n'drop system to better manage customized builds of hero characters and easen the navigation for mouse and gamepad alike:</p>
+        <p>Loadout Controls: For the character builds screen, I implemented custom controls by introducing a drag'n'drop system to better manage builds of hero characters and easen the navigation for mouse and gamepad alike:</p>
         <ul>
             <li>gamepad navigation support.</li>
             <li>mouse: detect targeted items of current drag by using a two-pointer system (i.e, find closest item to current mouse coordinates) for placement and hover feedback.</li>
@@ -73,11 +73,32 @@
                 <li>properly update index order when modifying already equipped upgrades, e.g., only swap valid combinations, or "move up" upgrades after deleting upgrades with lower indices.</li>
             </ul>
         </ul>
-        <p>Voice Chat UI: In collaboration with our engine and networking team, I was responsible for displaying the UI of the players' current communication states:</p>
+        <p>Voice Chat UI: In collaboration with our engine and networking team, I was responsible for the UI of the players' current voice and communication states:</p>
         <ul>
-            <li>custom voice UI for the party block, hero selection screen and scoreboard.</li>
-            <li>general UI solutions for gameplay, transition screens and other.</li>
+            <li>unified update system to the voice chat UI based on delegates and events:</li>
+            <ul>
+                <li>custom voice UI for the party block, hero selection screen and scoreboard.</li>
+                <li>general UI solutions for gameplay, transition screens and other.</li>
+            <ul>
             <li>support mute and block actions as well as joining or leaving players to refresh session states.</li>
+        </ul>
+
+        <p>Shield and Health UI:</p>
+        <ul>
+            <li>shield and health now share the total bar instead of one bar overlapping the other.</li>
+            <li>smoothen fill animation when gaining shield.</li>
+            <li>display extra health buff as part of usual health bar instead of a separate bar.</li>
+            <li>generalized shield bar option for heroes that can only have the shield temporarily.</li>
+            <ul>
+                <li>whilst the shield is permamently present for <i>Rutger</i>, it can only be temporarily applied by <i>HK</i> or <i>Zandora</i> for any other heroes.</li>
+            </ul>
+        </ul>
+
+        <p>And many other UI implementions:</p>
+        <ul>
+            <li>change HUD to a more blue and gradient-based palette for contrast.</li>
+            <li>rework AoE outlines to differentiate between heal and damage outlines of heroes.</li>
+            <li>fixes to tutorial hint displays, gamepad navigations, and many other UI bugfixes!</li>
         </ul>
         <p><b>Developer:</b> Abstraction Games (original release by Motiga)<br/><b>Publisher:</b> Arc Games</p>
         <!--<p class="link"><a href="/projects.html"> See All Projects</a></p>-->
