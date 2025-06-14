@@ -53,7 +53,7 @@
     <div class="projectContent">
         <p>During my internship and Jr. programming role at Abstraction Games, I had the opportunity to work on the re-release of Gigantic (original release by Motiga in 2017) where I was part of the core code team from March 2023 until July 2024. Released as <b>Gigantic: Rampage Edition</b> in April 2024, Abstraction provided many improvements and additions such as entire UI overhauls, more guided tutorials, a new game mode called <i>Rush</i>, two new maps, and two new heroes, namely <i>Roland</i> and <i>Kajir</i>.</p>
         <p>My responsibilities mostly consisted of UI programming to increase accessibility and usability despite the technical debt warranted by Unreal Engine 3 and Flash. Later, I also worked on other game programming aspects to fix and create combat and attack behaviour for single heroes.</p>
-        <p>Footer action bar: For the user's front-end screen experience, I worked on the general footer bar that appears across many menu systems, e.g., the inventory, shop or settings screen. It dynamically loads in button prompt elements dependent on the currently selected item. My responsibilities were:</p>
+        <p>Footer action bar:</p>
         <ul>
             <li>introducing support for dynamic animations, i.e., a ring-like "filling-up" animation around button images to indicate held buttons of in-progress actions (e.g., purchase actions).</li>
             <li>ensuring consistent spacing and enumerations of elements, including:</li>
@@ -62,18 +62,22 @@
                 <li>a priority system that keeps a consistent position index of certain actions (e.g., "ESC" or "Back" always first) independent from data sheets definitions.</li>
                 <li>contextual positioning that relatively moves the footer bar horizontally based on distance to other near objects, e.g., prevent overlaps with party member block in bottom corner.</li>
             </ul>
+            <li>other fixes to improve across different menu systems, e.g., the inventory, shop or settings to improve front-end screen experience</li>
         </ul>
-        <p>Loadout Controls: For the character builds screen, I implemented custom controls by introducing a drag'n'drop system to better manage builds of hero characters and easen the navigation for mouse and gamepad alike:</p>
+        <p>Character Builds:</p>
         <ul>
             <li>gamepad navigation support.</li>
-            <li>mouse: detect targeted items of current drag by using a two-pointer system (i.e, find closest item to current mouse coordinates) for placement and hover feedback.</li>
-            <li>instant feedback what combinations and modifications are possible while editing:</li>
+            <li>custom controls by introducing a drag'n'drop system to better manage builds of hero characters:</li>
             <ul>
-                <li>indicate that some upgrades are dependent on other base upgrades and might require a certain order.</li>
-                <li>properly update index order when modifying already equipped upgrades, e.g., only swap valid combinations, or "move up" upgrades after deleting upgrades with lower indices.</li>
+                <li>mouse: detect targeted items of current drag by using a two-pointer system (i.e, find closest item to current mouse coordinates) for placement and hover feedback.</li>
+                <li>instant feedback what combinations and modifications are possible while editing:</li>
+                <ul>
+                    <li>indicate that some upgrades are dependent on other base upgrades and might require a certain order.</li>
+                    <li>properly update index order when modifying already equipped upgrades, e.g., only swap valid combinations, or "move up" upgrades after deleting upgrades with lower indices.</li>
+                </ul>
             </ul>
         </ul>
-        <p>Voice Chat UI: In collaboration with our engine and networking team, I was responsible for the UI of the players' current voice and communication states:</p>
+        <p>Voice Chat UI:</p>
         <ul>
             <li>unified update system to the voice chat UI based on delegates and events:</li>
             <ul>
@@ -86,9 +90,9 @@
         <p>Shield and Health UI:</p>
         <ul>
             <li>shield and health now share the total bar instead of one bar overlapping the other.</li>
-            <li>smoothen fill animation when gaining shield.</li>
+            <li>smoothened fill animation when gaining shield.</li>
             <li>display extra health buff as part of usual health bar instead of a separate bar.</li>
-            <li>generalized shield bar option for heroes that can only have the shield temporarily.</li>
+            <li>generalized shield bar option for heroes that can only have the shield temporarily:</li>
             <ul>
                 <li>whilst the shield is permamently present for <i>Rutger</i>, it can only be temporarily applied by <i>HK</i> or <i>Zandora</i> for any other heroes.</li>
             </ul>
@@ -96,6 +100,7 @@
 
         <p>And many other UI implementions:</p>
         <ul>
+            <li>add skill interval counter to the HUD, showing when a certain skill can execute a timed effect, e.g., <i>Wu</i> can do a Cyclone Kick every 3s on its primary attack.</li>
             <li>change HUD to a more blue and gradient-based palette for contrast.</li>
             <li>rework AoE outlines to differentiate between heal and damage outlines of heroes.</li>
             <li>fixes to tutorial hint displays, gamepad navigations, and many other UI bugfixes!</li>
