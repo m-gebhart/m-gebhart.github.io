@@ -51,25 +51,29 @@
     </div>
 
     <div class="projectContent">
-        <p>During my internship and Jr. programming role at Abstraction Games, I had the opportunity to work on the re-release of Gigantic (original release by Motiga in 2017) where I was part of the core code team from March 2023 until July 2024. Released as Gigantic: Rampage Edition in April 2024, Abstraction provided many improvements and additions such as entire UI overhauls, more guided tutorials, a new game mode called <i>Rush</i>, two new maps, and two new heroes, namely <i>Roland</i> and <i>Kajir</i>.</p>
+        <p>During my internship and Jr. programming role at Abstraction Games, I had the opportunity to work on the re-release of Gigantic (original release by Motiga in 2017) where I was part of the core code team from March 2023 until July 2024. Released as <b>Gigantic: Rampage Edition</b> in April 2024, Abstraction provided many improvements and additions such as entire UI overhauls, more guided tutorials, a new game mode called <i>Rush</i>, two new maps, and two new heroes, namely <i>Roland</i> and <i>Kajir</i>.</p>
         <p>My responsibilities mostly consisted of UI programming to increase accessibility and usability despite the technical debt warranted by Unreal Engine 3 and Flash. Later, I also worked on other game programming aspects to fix and create combat and attack behaviour for single heroes.</p>
-        <p>Footer action bar: For the user's front-end screen experience, I worked on the general footer bar that appears across many menu systems, e.g., the inventory, shop or settings screen. It dynamically loads in button prompt elements dependent on the currently selected item. My responsibilities were:</p> 
+        <p>Footer action bar: For the user's front-end screen experience, I worked on the general footer bar that appears across many menu systems, e.g., the inventory, shop or settings screen. It dynamically loads in button prompt elements dependent on the currently selected item. My responsibilities were:
         <ul>
             <li>introducing support for dynamic animations, i.e., a ring-like "filling-up" animation around button images to indicate held buttons of in-progress actions.</li>
-            <li>ensuring consistent spacing and numerations of elements, including:</li>
+            <li>ensuring consistent spacing and enumerations of elements, including:</li>
             <ul>
                 <li>loading in button images either next to or in-between text characters. This is also dependent on the chosen language or input type (gamepad / mouse).</li>
                 <li>a priority system that keeps a consistent position index of certain actions (e.g., "ESC" or "Back" always first) independent from data sheets definitions.</li>
                 <li>contextual positioning that moves the footer bar horizontally based on distance to other near objects, e.g., prevent overlaps with party member block in bottom corner.</li>
             </ul>
         </ul>
-        <p>Loadout Controls: For the character builds screen, I introduced a drag'n'drop system to better manage customized builds of hero characters.</p>
+        </p> 
+        <p>Loadout Controls: For the character builds screen, I implemented custom controls by introducing a drag'n'drop system to better manage customized builds of hero characters and easen the navigation for mouse and gamepad alike:
         <ul>
-            <li>two-pointer system.</li>
-            <li>indication what upgrades are possible, otherwise show alternatives.</li>
-            <li>navigation constraints.</li>
+            <li>mouse: detect targeted items of current drag by using a two-pointer system (i.e, find closest item to current mouse coordinates).</li>
+            <li>while editing, show indications what combinations are possible because some upgrades are dependent on otherwise base upgrades:</li>
+            <ul>
+            <li>support updates to the index order when modifying already equipped upgrades, e.g., show valid combinations when swapping, or "fill-up" and move following upgrades after deleting upgrades with lower index.</li>
+            </ul>
             <li>gamepad navigation support.</li>
         </ul>
+        </p>
         <p><b>Developer:</b> Abstraction Games (original release by Motiga)<br/><b>Publisher:</b> Arc Games</p>
         <!--<p class="link"><a href="/projects.html"> See All Projects</a></p>-->
     </div>
