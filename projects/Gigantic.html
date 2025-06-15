@@ -54,7 +54,7 @@
         <p>During my internship and Jr. programming role at Abstraction Games, I had the opportunity to work on the re-release of Gigantic (original release by Motiga in 2017) where I was part of the core code team from March 2023 until July 2024. Released as <b>Gigantic: Rampage Edition</b> in April 2024, Abstraction provided many improvements and additions such as entire UI overhauls, more guided tutorials, a new game mode called <i>Rush</i>, two new maps, and two new heroes, namely <i>Roland</i> and <i>Kajir</i>.</p>
         <p>My responsibilities mostly consisted of UI programming to increase accessibility and usability despite the technical debt warranted by Unreal Engine 3 and Flash. Later, I also worked on other game programming aspects to fix and create combat and attack behaviour for single heroes.</p>
         <div class="highlights">
-            <h2>UI Programming:</h2>
+            <h2>UI Programming</h2>
         </div>
         <p>Footer Action Bar:</p>
         <ul>
@@ -69,13 +69,13 @@
         <p>Character Builds:</p>
         <ul>
             <li>gamepad navigation support.</li>
-            <li>custom controls by introducing a <b>drag'n'drop system</b> to better manage builds of hero characters:</li>
+            <li>custom controls by introducing a <b>drag'n'drop system</b> to better manage order of a hero character's upgrade build:</li>
             <ul>
-                <li>mouse: detect targeted items of current drag by using a two-pointer system (i.e, find closest item to current mouse coordinates) for placement and hover feedback.</li>
+                <li>detect targeted items of current drag by using a two-pointer system (i.e, find closest item to current mouse coordinates) for placement and hover feedback.</li>
                 <li>instant feedback what combinations and modifications are possible while editing:</li>
                 <ul>
-                    <li>indicate that some upgrades are dependent on other base upgrades and might require a certain order.</li>
-                    <li>properly update index order when modifying already equipped upgrades, e.g., only swap valid combinations, or "move up" upgrades after deleting upgrades with lower indices.</li>
+                    <li>indications that some upgrades are dependent on other base upgrades and might require a certain order.</li>
+                    <li>index order update when modifying already equipped upgrades, e.g., only swap valid combinations, or "move up" upgrades after deleting upgrades with lower indices to prevent gaps.</li>
                 </ul>
             </ul>
         </ul>
@@ -91,15 +91,15 @@
 
         <p>Shield and Health UI:</p>
         <ul>
-            <li>complete rework of shield and health UI to now share the total bar instead of one bar overlapping the other.</li>
+            <li>complete rework of shield and health UI to now share the total bar instead of one bar overlapping the other:</li>
             <ul>
                 <li>smoothened shield bar's refill animation when recharging.</li>
-                <li>improved shield bar's damage loss "burn" animation</li>
+                <li>improved shield bar's damage loss "burn" animation.</li>
                 <li>extra health buff (prior display as separate bar) now part as usual health.</li>
             </ul>
-            <li>generalized shield bar option to improve display for any heroes, no matter whether shield is permanent or temporary only:</li>
+            <li>generalized shield bar implementation to improve display for any heroes, no matter whether shield is permanent or temporary only:</li>
             <ul>
-                <li>e.g., whilst <i>Rutger</i> has a permament shield auto-heals, it could also only be temporary with <i>HK's</i> or <i>Zandora's</i> skill.</li>
+                <li>e.g., whilst <i>Rutger</i> has a permament shield that auto-heals, the shield could also only be temporary with <i>HK's</i> or <i>Zandora's</i> skill.</li>
             </ul>
         </ul>
 
@@ -112,9 +112,9 @@
         <p>And many other UI implementions:</p>
         <ul>
             <li>skill interval counter to the HUD, showing when a certain skill can execute a timed effect, e.g., <i>Wu</i> can do a Cyclone Kick every 3s on its primary attack.</li>
-            <li>implementation of redesign and visual overhaul for the hero selection screen</li>
+            <li>rework and visual overhaul of the hero selection screen</li>
             <li>general HUD change to a more blue-green and gradient-based palette for contrast.</li>
-            <li>rework of AoE outlines with not only more colors but also visibility to only affected players to better perceive heal and damage outlines of heroes.</li>
+            <li>rework of AoE outlines with contrast colors and limiting visibility to only affected players to better perceive heal and damage outlines of hero skills.</li>
             <li>fixes to tutorial hint displays, gamepad navigations, and many other UI bugfixes!</li>
         </ul>
         <div class="highlights">
