@@ -7,9 +7,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     z-index: 1;
-    background: black no-repeat left;
-    background-size: 100vw auto;
-    background-repeat: no-repeat;
+    background: black no-repeat;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     color: white;
 }
