@@ -53,9 +53,12 @@
     <div class="projectContent">
         <p>During my internship and Jr. programming role at Abstraction Games, I had the opportunity to work on the re-release of Gigantic (original release by Motiga in 2017) where I was part of the core code team from March 2023 until July 2024. Released as <b>Gigantic: Rampage Edition</b> in April 2024, Abstraction provided many improvements and additions such as entire UI overhauls, more guided tutorials, a new game mode called <i>Rush</i>, two new maps, and two new heroes, namely <i>Roland</i> and <i>Kajir</i>.</p>
         <p>My responsibilities mostly consisted of UI programming to increase accessibility and usability despite the technical debt warranted by Unreal Engine 3 and Flash. Later, I also worked on other game programming aspects to fix and create combat and attack behaviour for single heroes.</p>
+        <div class="highlights">
+            <h2>UI Programming:</h2>
+        </div>
         <p>Footer Action Bar:</p>
         <ul>
-            <li>introducing support for dynamic animations, i.e., a ring-like "filling-up" animation around button images to indicate held buttons of in-progress actions (e.g., purchase actions).</li>
+            <li>introducing support for <b>dynamic animations</b>, i.e., a ring-like "filling-up" animation around button images to indicate held buttons of in-progress actions (e.g., purchase actions).</li>
             <li>ensuring consistent spacing and enumerations of elements, including:</li>
             <ul>
                 <li>loading in button images either next to or in-between text characters. This is also dependent on the chosen language or input type (gamepad / mouse).</li>
@@ -66,7 +69,7 @@
         <p>Character Builds:</p>
         <ul>
             <li>gamepad navigation support.</li>
-            <li>custom controls by introducing a drag'n'drop system to better manage builds of hero characters:</li>
+            <li>custom controls by introducing a <b>drag'n'drop system</b> to better manage builds of hero characters:</li>
             <ul>
                 <li>mouse: detect targeted items of current drag by using a two-pointer system (i.e, find closest item to current mouse coordinates) for placement and hover feedback.</li>
                 <li>instant feedback what combinations and modifications are possible while editing:</li>
@@ -88,12 +91,15 @@
 
         <p>Shield and Health UI:</p>
         <ul>
-            <li>shield and health now share the total bar instead of one bar overlapping the other.</li>
-            <li>smoothened fill animation when gaining shield.</li>
-            <li>extra health buff now as part of usual health bar instead of a separate bar.</li>
-            <li>generalized shield bar option to support display for any heroes, no matter whether permanent shield or temporary only:</li>
+            <li>complete rework of shield and health UI to now share the total bar instead of one bar overlapping the other.</li>
             <ul>
-                <li>e.g., whilst the shield is permamently present for <i>Rutger</i>, it can only be temporarily applied by <i>HK</i> or <i>Zandora</i> for any other heroes.</li>
+                <li>smoothened shield bar's refill animation when recharging.</li>
+                <li>improved shield bar's damage loss "burn" animation</li>
+                <li>extra health buff (prior display as separate bar) now part as usual health.</li>
+            </ul>
+            <li>generalized shield bar option to improve display for any heroes, no matter whether shield is permanent or temporary only:</li>
+            <ul>
+                <li>e.g., whilst <i>Rutger</i> has a permament shield auto-heals, it could also only be temporary with <i>HK's</i> or <i>Zandora's</i> skill.</li>
             </ul>
         </ul>
 
@@ -107,9 +113,17 @@
         <ul>
             <li>skill interval counter to the HUD, showing when a certain skill can execute a timed effect, e.g., <i>Wu</i> can do a Cyclone Kick every 3s on its primary attack.</li>
             <li>implementation of redesign and visual overhaul for the hero selection screen</li>
-            <li>general HUD change to a more blue and gradient-based palette for contrast.</li>
+            <li>general HUD change to a more blue-green and gradient-based palette for contrast.</li>
             <li>rework of AoE outlines with not only more colors but also visibility to only affected players to better perceive heal and damage outlines of heroes.</li>
             <li>fixes to tutorial hint displays, gamepad navigations, and many other UI bugfixes!</li>
+        </ul>
+        <div class="highlights">
+            <h2>Gameplay Programming:</h2>
+        </div>
+        <p>AI Programming and Character Skills / Upgrades:</p>
+        <ul>
+            <li><i>Roland</i> drone and AoE debuff fixes.</li>
+            <li><i>Kajir</i> smoke skill and AI fixes.</li>
         </ul>
         <p><b>Developer:</b> Abstraction Games (original release by Motiga)<br/><b>Publisher:</b> Arc Games</p>
         <!--<p class="link"><a href="/projects.html"> See All Projects</a></p>-->
