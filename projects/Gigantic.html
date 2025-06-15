@@ -56,6 +56,17 @@
         <div class="highlights">
             <h2>UI Programming</h2>
         </div>
+        <p>Gameplay HUD:</p>
+        <ul>
+            <li>rework of shield and health UI:</li>
+            <ul>
+                <li>smoothened shield bar's animations for recharging and damage loss.</li>
+                <li>generalized shield bar implementation to improve display for any heroes, no matter whether shield is permanent (<i>Rutger</i> or temporary only (<i>HK</i>, <i>Zandora</i>)</li>
+                <li>extra health buff (prior display as separate bar) now part as usual health.</li>
+            </ul>
+            <li>introduce new "skill interval" counter, showing when a certain skill can execute a timed effect, e.g., <i>Wu</i> can do a Cyclone Kick every 3s on its primary attack.</li>
+            <li>general HUD change to a more blue-green and gradient-based palette for contrast.</li>
+        </ul>
         <p>Footer Action Bar:</p>
         <ul>
             <li>introducing support for <b>dynamic animations</b>, i.e., a ring-like "filling-up" animation around button images to indicate held buttons of in-progress actions (e.g., purchase actions).</li>
@@ -88,20 +99,6 @@
             </ul>
             <li>support for mute and block actions as well as joining or leaving players to refresh session states.</li>
         </ul>
-
-        <p>Gameplay HUD:</p>
-        <ul>
-            <li>complete rework of shield and health UI:</li>
-            <ul>
-                <li>smoothened shield bar's refill animation when recharging.</li>
-                <li>distinct shield bar's damage loss "burn" animation.</li>
-                <li>generalized shield bar implementation to improve display for any heroes, no matter whether shield is permanent (<i>Rutger</i> or temporary only (<i>HK</i>, <i>Zandora</i>)</li>
-                <li>extra health buff (prior display as separate bar) now part as usual health.</li>
-            </ul>
-            <li>introduce new "skill interval" counter, showing when a certain skill can execute a timed effect, e.g., <i>Wu</i> can do a Cyclone Kick every 3s on its primary attack.</li>
-            <li>general HUD change to a more blue-green and gradient-based palette for contrast.</li>
-        </ul>
-
         <p>End of Match:</p>
         <ul>
             <li><i>Rush</i> mode: with the option to change heroes mid-match, I added an internal counting system to be able display the most played hero by each player.</li>
@@ -110,8 +107,8 @@
 
         <p>And many other UI implementions:</p>
         <ul>
-            <li>rework and visual overhaul of the hero selection screen</li>
-            <li>rework of AoE outlines with contrast colors and limiting visibility to only affected players to better perceive heal and damage outlines of hero skills.</li>
+            <li>rework and visual overhaul of the hero selection screen.</li>
+            <li>rework of AoE outlines with contrast colors and limiting visibility to only affected players.</li>
             <li>fixes to tutorial hint displays, gamepad navigations, and many other UI bugfixes!</li>
         </ul>
         <div class="highlights">
