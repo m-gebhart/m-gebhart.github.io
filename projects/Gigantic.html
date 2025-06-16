@@ -19,7 +19,9 @@
 <script type="application/ld+json">
 {"dateModified":"2025-06-12T15:55:27+02:00","datePublished":"2025-06-12T15:55:27+02:00","description":"GIGANTIC: RAMPAGE EDITION is a premium and definitive release of the original 5v5 MOBA Hero Shooter, GIGANTIC, that provides a dynamic and exciting team-based multiplayer experience for fans of both genres. Choose from a diverse roster of unique heroes, each with a set of upgradeable abilities, and team up with four other players to control objectives and take down the opposing team’s mighty Guardian, all while protecting your own.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/Mayhaemsters.html"},"url":"/projects/Mayhaemsters.html","headline":"Mayhaemsters","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-
+<style>
+h4 {margin-bottom: -5px}
+</style>
 </head>
 <body style= "background-image: url(https://pwimages-a.akamaihd.net/arcportal_static/images/gigantic_rampage/heroesSplash.webp); color: black; background-attachment: fixed; background-size: cover; background-position: center;">
 <div class="content all">
@@ -54,9 +56,9 @@
         <p>During my internship and Jr. programming role at Abstraction Games, I had the opportunity to work on the re-release of Gigantic (original release by Motiga in 2017) where I was part of the core code team from March 2023 until July 2024. Released as <b>Gigantic: Rampage Edition</b> in April 2024, Abstraction provided many improvements and additions such as entire UI overhauls, more guided tutorials, a new game mode called <i>Rush</i>, two new maps, and two new heroes, namely <i>Roland</i> and <i>Kajir</i>.</p>
         <p>My responsibilities mostly consisted of UI programming to increase accessibility and usability despite the technical debt warranted by Unreal Engine 3 and Flash. Later, I also worked on other game programming aspects to fix and create combat and attack behaviour for single heroes.</p>
         <div class="highlights">
-            <h2>UI Programming</h2>
+        <h2>UI Programming</h2>
         </div>
-        <p>Gameplay HUD:</p>
+        <h4>Gameplay HUD:</h4>
         <ul>
             <li>rework of shield and health UI:</li>
             <ul>
@@ -64,20 +66,20 @@
                 <li>generalized shield bar implementation to improve display for any heroes, no matter whether shield is permanent (<i>Rutger</i> or temporary only (<i>HK</i>, <i>Zandora</i>)</li>
                 <li>extra health buff (prior display as separate bar) now part as usual health.</li>
             </ul>
-            <li>introduce new "skill interval" counter, showing when a certain skill can execute a timed effect, e.g., <i>Wu</i> can do a Cyclone Kick every 3s on its primary attack.</li>
+            <li>introduced a new "skill interval" counter, showing when a certain skill can execute a timed effect, e.g., <i>Wu</i> can do a Cyclone Kick every 3s on its primary attack.</li>
             <li>general HUD change to a more blue-green and gradient-based palette for contrast.</li>
         </ul>
-        <p>Footer Action Bar:</p>
+        <h4>Footer Action Bar:</h4>
         <ul>
-            <li>introducing support for <b>dynamic animations</b>, i.e., a ring-like "filling-up" animation around button images to indicate held buttons of in-progress actions (e.g., purchase actions).</li>
-            <li>enabling consistent spacing and enumerations of elements, including:</li>
+            <li>introduced support for <b>dynamic animations</b>, i.e., a ring-like "filling-up" animation around button images to indicate held buttons of in-progress actions (e.g., purchase actions).</li>
+            <li>enabled consistent spacing and enumerations of elements, including:</li>
             <ul>
                 <li>option for loading in button images either next to or in-between text characters. This is also dependent on the chosen language or input type (gamepad / mouse).</li>
                 <li>a priority system that keeps a consistent position index of certain actions (e.g., "ESC" or "Back" always first) independent from data sheets definitions.</li>
                 <li>contextual positioning that relatively moves the footer bar horizontally. This is based on distances to other near objects, e.g., to prevent overlaps with party member block in bottom corner.</li>
             </ul>
         </ul>
-        <p>Character Builds:</p>
+        <h4>Character Builds:</h4>
         <ul>
             <li>gamepad navigation support.</li>
             <li>custom controls by introducing a <b>drag'n'drop system</b> to better manage order of a hero character's upgrade build:</li>
@@ -90,7 +92,7 @@
                 </ul>
             </ul>
         </ul>
-        <p>Voice Chat UI:</p>
+        <h4>Voice Chat UI:</h4>
         <ul>
             <li>unified update system to the voice chat UI based on delegates and events:</li>
             <ul>
@@ -99,13 +101,19 @@
             </ul>
             <li>support for mute and block actions as well as joining or leaving players to refresh session states.</li>
         </ul>
-        <p>End of Match:</p>
+        <h4>End of Match:</h4>
         <ul>
-            <li><i>Rush</i> mode: with the option to change heroes mid-match, I added an internal counting system to be able display the most played hero by each player.</li>
-            <li>Finalized MPR system:</li>
+            <li><i>Rush</i> mode: due to the new feature to change heroes mid-match, I added an internal counting system to be able display the most played hero by each player.</li>
+            <li>MPR: display grade by comparing player's match performance with other players' data who played the same hero:</li>
+            <ul>
+                <li>retrieve JSON data to find average and standard deviation values for each stat, category and playstyle.</li>
+                <li>find percentile for each value by normal distribution and a modified error function.</li>
+                <li>calculate final rating out of percentiles, and update JSON data with PlayFab tasks.</li>
+                <li>create a randomizer to generate default JSON data for each hero to fulfill circular dependency.</li>
+            </ul>
         </ul>
 
-        <p>And many other UI implementions:</p>
+        <h4>And many other UI implementions:</h4>
         <ul>
             <li>rework and visual overhaul of the hero selection screen.</li>
             <li>rework of AoE outlines with contrast colors and limiting visibility to only affected players.</li>
@@ -114,7 +122,7 @@
         <div class="highlights">
             <h2>Gameplay Programming:</h2>
         </div>
-        <p>AI Programming and Character Skills / Upgrades:</p>
+        <h4>AI Programming and Character Skills / Upgrades:</h4>
         <ul>
             <li><i>Roland</i> drone and AoE debuff fixes.</li>
             <li><i>Kajir</i> smoke skill and AI fixes.</li>
