@@ -60,41 +60,41 @@ h4 {margin-bottom: -15px}
         </div>
         <h4>Gameplay HUD:</h4>
         <ul>
-            <li>rework of shield and health UI:</li>
+            <li>rework of <b>shield and health UI</b>:</li>
             <ul>
                 <li>smoothened shield bar's animations for recharging and damage loss.</li>
                 <li>generalized shield bar implementation to improve display for any heroes, no matter whether shield is permanent (<i>Rutger</i>) or temporary only (<i>HK</i>, <i>Zandora</i>).</li>
                 <li>extra health buff (prior display as separate bar) now part as usual health.</li>
             </ul>
-            <li>introduced a new "skill interval" counter, showing when a certain skill can execute a timed effect, e.g., <i>Wu</i> can do a Cyclone Kick every 3s on its primary attack.</li>
             <li>general HUD change to a more blue-green and gradient-based palette for contrast.</li>
+            <li>introduced a new <b>skill interval counter</b> for when a certain skill can execute a timed effect, e.g., <i>Wu</i> can do a buffed Kick every 3s on its primary attack.</li>
         </ul>
         <h4>Footer Action Bar:</h4>
         <ul>
             <li>introduced support for <b>dynamic animations</b>, i.e., a ring-like "filling-up" animation around button images to indicate held buttons of in-progress actions (e.g., purchase actions).</li>
             <li>enabled consistent spacing and enumerations of elements, including:</li>
             <ul>
-                <li>option for loading in button images either next to or in-between text characters. This is also dependent on the chosen language or input type (gamepad / mouse).</li>
+                <li>option for loading in button images anywhere in-between text, accounting for the chosen language or input type (gamepad / mouse).</li>
                 <li>a priority system that keeps a consistent position index of certain actions (e.g., "ESC" or "Back" always first) independent from data sheets definitions.</li>
-                <li>contextual positioning that relatively moves the footer bar horizontally. This is based on distances to other near objects, e.g., to prevent overlaps with party member block in bottom corner.</li>
+                <li>contextual positioning that horizontally moves the footer bar, based on distances to other near objects, e.g., to prevent overlaps with party member block in bottom corner.</li>
             </ul>
         </ul>
         <h4>Character Builds:</h4>
         <ul>
-            <li>gamepad navigation support.</li>
             <li>custom controls by introducing a <b>drag'n'drop system</b> to better manage order of a hero character's upgrade build:</li>
             <ul>
                 <li>detect targeted items of current drag by using a two-pointer system (i.e, find closest item to current mouse coordinates) for placement and hover feedback.</li>
+                <li>gamepad navigation.</li>
                 <li>instant feedback what combinations and modifications are possible while editing:</li>
                 <ul>
-                    <li>indications that some upgrades are dependent on other base upgrades and might require a certain order.</li>
-                    <li>index order update when modifying already equipped upgrades, e.g., only swap valid combinations, or "move up" upgrades after deleting upgrades with lower indices to prevent gaps.</li>
+                    <li>indications that some upgrades require other base upgrades.</li>
+                    <li>"move up" upgrades after deleting upgrades with lower indices to prevent gaps.</li>
                 </ul>
             </ul>
         </ul>
         <h4>Voice Chat UI:</h4>
         <ul>
-            <li>unified update system to the voice chat UI based on delegates and events:</li>
+            <li>unified updates to the voice chat UI based on delegates and events:</li>
             <ul>
                 <li>custom voice UI for the party block, hero selection screen and scoreboard.</li>
                 <li>general UI solutions for gameplay, transition screens and other.</li>
@@ -103,12 +103,15 @@ h4 {margin-bottom: -15px}
         </ul>
         <h4>End of Match:</h4>
         <ul>
-            <li><i>Rush</i> mode: due to the new feature to change heroes mid-match, I added an internal counting system to be able display the most played hero by each player.</li>
-            <li>MPR grade by comparing player's performance with other players' data who played the same hero:</li>
-            <ul>
+            <li><i>Rush</i> mode: due to the new feature of changing heroes mid-match, I added an internal counting system to display the most played hero by each player.</li>
+            <li><b>MPR grade</b> by comparing player's performance with other players' data who played the same hero:</li>
+            <ol>
                 <li>retrieve JSON data to find average and standard deviation values for each stat and playstyle.</li>
                 <li>find percentile for each value by normal distribution and a modified error function.</li>
-                <li>PlayFab task: calculate final rating out of percentiles, and update JSON data with player's new performance.</li>
+                <li>calculate final rating from percentiles.</li>
+                <li>PlayFab task: update JSON data with player's new performance.</li>
+            </ol>
+            <ul>
                 <li>PlayFab task: generate default JSON data for each hero to fulfill circular dependency.</li>
             </ul>
         </ul>
@@ -117,7 +120,7 @@ h4 {margin-bottom: -15px}
         <ul>
             <li>rework and visual overhaul of the hero selection screen.</li>
             <li>rework of AoE outlines with contrast colors and limiting visibility to only affected players.</li>
-            <li>fixes to tutorial hint displays, gamepad navigations, and many other UI bugfixes!</li>
+            <li>certification fixes: tutorial hint displays, gamepad navigations, and many other UI bugfixes!</li>
         </ul>
         <div class="highlights">
             <h2>Gameplay Programming:</h2>
@@ -127,14 +130,19 @@ h4 {margin-bottom: -15px}
             <li><i>Roland</i>:</li>
             <ul>
                 <li>drone: improved rotation and gliding physics of drone that auto-approaches enemies.</li>
-                <li>grapple: add event and payload data from hook's end or success state.</li>
+                <li>grapple: add event and payload data from hook's success state for AoE debuffs.</li>
             </ul>
             <li><i>Kajir</i>:</li>
             <ul>
-                <li>smoke:</li>
-                <li>clonse:</li>
+                <li>crew: added sprinting and improved approach behaviour for clone instances.</li>
+                <li>smoke: reworked continous damage instancing and replication.</li>
             </ul>
-            
+            <li><b>Polymorph counter</b>:</li>
+            <ul>
+                <li>introduced ability to break out of immobile polymorphed state(<i>Ezren Ghal</i>, <i>Tripp</i>).</li>
+                <li>rework "blocked" UI layer for skill icons to enable exceptions and highlight icons.</li>
+            </ul>
+            <li>many other fixes to attacks and upgrades of heroes from the original roaster!</li>
         </ul>
         <p><b>Developer:</b> Abstraction Games (original release by Motiga)<br/><b>Publisher:</b> Arc Games</p>
         <!--<p class="link"><a href="/projects.html"> See All Projects</a></p>-->
