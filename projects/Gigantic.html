@@ -20,7 +20,7 @@
 {"dateModified":"2025-06-12T15:55:27+02:00","datePublished":"2025-06-12T15:55:27+02:00","description":"GIGANTIC: RAMPAGE EDITION is a premium and definitive release of the original 5v5 MOBA Hero Shooter, GIGANTIC, that provides a dynamic and exciting team-based multiplayer experience for fans of both genres. Choose from a diverse roster of unique heroes, each with a set of upgradeable abilities, and team up with four other players to control objectives and take down the opposing team’s mighty Guardian, all while protecting your own.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/Mayhaemsters.html"},"url":"/projects/Mayhaemsters.html","headline":"Mayhaemsters","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <style>
-h4 {margin-bottom: -5px}
+h4 {margin-bottom: -15px}
 </style>
 </head>
 <body style= "background-image: url(https://pwimages-a.akamaihd.net/arcportal_static/images/gigantic_rampage/heroesSplash.webp); color: black; background-attachment: fixed; background-size: cover; background-position: center;">
@@ -104,12 +104,12 @@ h4 {margin-bottom: -5px}
         <h4>End of Match:</h4>
         <ul>
             <li><i>Rush</i> mode: due to the new feature to change heroes mid-match, I added an internal counting system to be able display the most played hero by each player.</li>
-            <li>MPR: display grade by comparing player's match performance with other players' data who played the same hero:</li>
+            <li>MPR grade by comparing player's performance with other players' data who played the same hero:</li>
             <ul>
-                <li>retrieve JSON data to find average and standard deviation values for each stat, category and playstyle.</li>
+                <li>retrieve JSON data to find average and standard deviation values for each stat and playstyle.</li>
                 <li>find percentile for each value by normal distribution and a modified error function.</li>
-                <li>calculate final rating out of percentiles, and update JSON data with PlayFab tasks.</li>
-                <li>create a randomizer to generate default JSON data for each hero to fulfill circular dependency.</li>
+                <li>PlayFab task: calculate final rating out of percentiles, and update JSON data with player's new performance.</li>
+                <li>PlayFab task: generate default JSON data for each hero to fulfill circular dependency.</li>
             </ul>
         </ul>
 
