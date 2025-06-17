@@ -60,11 +60,11 @@ h4 {margin-bottom: -15px}
         </div>
         <h4>Gameplay HUD:</h4>
         <ul>
-            <li>rework of <b>shield and health UI</b>:</li>
+            <li>Shield and Health UI:</li>
             <ul>
-                <li>smoothened shield bar's animations for recharging and damage loss.</li>
-                <li>generalized shield bar implementation to improve display for any heroes, no matter whether shield is permanent (<i>Rutger</i>) or temporary only (<i>HK</i>, <i>Zandora</i>).</li>
-                <li>extra health buff (prior display as separate bar) now part as usual health.</li>
+                <li>rework of <b>shield bar</b> to display absolute segmentation for any hero, no matter whether shield is permanent (<i>Rutger</i>) or temporary only (<i>HK</i>, <i>Zandora</i>).</li>
+                <li>regeneration feedback with pulsing frame indication</li>
+                <li>remove "extra health" buff (prior display as separate bar) and account as usual health.</li>
             </ul>
             <li>general HUD change to a more blue-green and gradient-based palette for contrast.</li>
             <li>introduced a new <b>skill interval counter</b> for when a certain skill can execute a timed effect, e.g., <i>Wu</i> can do a buffed Kick every 3s on its primary attack.</li>
@@ -122,6 +122,7 @@ h4 {margin-bottom: -15px}
             <li>rework of AoE outlines with contrast colors and limiting visibility to only affected players.</li>
             <li>certification fixes: tutorial hint displays, gamepad navigations, and many other UI bugfixes!</li>
         </ul>
+        
         <div class="highlights">
             <h2>Gameplay Programming:</h2>
         </div>
