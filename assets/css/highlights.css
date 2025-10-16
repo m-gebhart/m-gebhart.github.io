@@ -8,7 +8,7 @@
 }
 
 .container {
-    flex: 30%;
+    flex: 50%;
     max-width: 100%;
     padding: 0px 10px 16px 10px;
     margin: 1vh 0vw;
@@ -75,4 +75,5 @@
     .home.logos img {
         height: 8.5vw;
     }
+
 }
