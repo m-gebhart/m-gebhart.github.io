@@ -8,7 +8,15 @@
 }
 
 .container {
-    flex: 50%;
+    flex: 30%;
+    max-width: 100%;
+    padding: 0px 10px 16px 10px;
+    margin: 1vh 0vw;
+    left: 0;
+}
+
+.topcontainer {
+    flex: 40%;
     max-width: 100%;
     padding: 0px 10px 16px 10px;
     margin: 1vh 0vw;
@@ -77,3 +85,4 @@
     }
 
 }
+
