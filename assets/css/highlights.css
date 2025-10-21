@@ -33,7 +33,22 @@
     justify-content: center;
 }
 
+.topcontainer.thumbnail {
+    display: block !important;
+    position: relative;
+    height: 17vw;
+    width: auto;
+    margin: auto;
+    margin-top: 3vh;
+    justify-content: center;
+}
+
 .container.thumbnail:hover {
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+
+.topcontainer.thumbnail:hover {
     opacity: 0.3;
     transition: opacity 0.3s;
 }
@@ -85,4 +100,5 @@
     }
 
 }
+
 
