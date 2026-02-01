@@ -14,7 +14,7 @@
 	text-align: right;
 	text-decoration: none;
     font-style: none;
-	position: fixed;
+	position: relative;
     bottom: 0px;
 }
 
@@ -51,6 +51,7 @@
 	color: black;
 	text-decoration: none;
 }
+
 
 
 
