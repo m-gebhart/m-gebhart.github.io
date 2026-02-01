@@ -14,9 +14,10 @@
 .cookieBanner {
     position: fixed;
     bottom: 0px;
-    border-top: black solid 1px;
+    border: white solid 1px;
     z-index: 2;
     background-color: black;
+	padding: 10px;
 } 
 
 .cookieBanner p {
@@ -31,10 +32,12 @@
 
 .cookieBanner li {
 	margin: auto;
+	color: black;
     text-align: center;
     padding: 7px 10px;
     text-decoration: none;
     background-color: white;
-    border: black solid 1px;
+    border: black double 1px;
 }
+
 
