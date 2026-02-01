@@ -1,5 +1,13 @@
 var allButtons;
 
+function enableCookies()() {
+    localStorage.setItem("hasCookies", true);
+}
+
+function disableCookies()() {
+    localStorage.setItem("hasCookies", false);
+}
+
 function toggleMenu() {
     var nav = document.getElementById("topnavID");
     allButtons = nav.firstElementChild.firstElementChild.getElementsByTagName("li");
@@ -29,4 +37,5 @@ function animate() {
 
 const sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
+
 };
