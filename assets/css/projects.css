@@ -75,6 +75,7 @@ pgp-gif {
 @media screen and (max-width: 850px) {
     .video-frame {
         position: relative;
+        display: none;
     }
 
     iframe {
@@ -92,3 +93,4 @@ pgp-gif {
         height: auto;
     }
 }
+
