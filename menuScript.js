@@ -15,6 +15,14 @@ function hideBanner() {
     banner.style.display = 'none';
 }
 
+function checkCookieAccepted() {
+    if (localStorage.getItem("hasCookies")) {
+        var video = document.getElementById("youTubeVideoID");
+        video.style.display = 'block';
+        hideBanner();
+    }
+}
+
 function toggleMenu() {
     var nav = document.getElementById("topnavID");
     allButtons = nav.firstElementChild.firstElementChild.getElementsByTagName("li");
@@ -46,5 +54,6 @@ const sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 
 };
+
 
 
