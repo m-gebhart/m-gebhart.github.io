@@ -21,7 +21,7 @@
 <!-- End Jekyll SEO tag -->
 
 </head>
-<body style= "background-image: url(/assets/pictures/blinded_bg2.jpg);">
+<body style= "background-image: url(/assets/pictures/blinded_bg2.jpg);" onload="javascript:checkCookiesAccepted()">
     <div class="content all">
         <script src="/menuScript.js"></script>
 <div class="topnav" id="topnavID">
@@ -46,8 +46,8 @@
     <p>2019 &middot; Sidescrolling Puzzle Adventure &middot; Collaborative Project (6 Weeks) &middot; Unity / C#, FMOD</p>
 </div>
 <div class="content standard">
-
-    <div class="video-frame">
+    <p id="cookieNotifierID" display="none"><b>Please allow for Cookies to watch embedded YouTube content here.</b></p>
+    <div class="video-frame" id="youTubeVideoID">
         <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/b65JpErxZ1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
     </div>
 
@@ -64,23 +64,26 @@
         </ul>
         <p>ONLINE: Via <a href="https://colognegamelab.de/study-programs/student-projects/blinded-wt-2020/" target="_blank" style="text-decoration: underline;">Cologne Game Lab</a></p>
         <p>CODE: <a href="https://github.com/m-gebhart/Blinded" target="_blank">github.com/m-gebhart/Blinded</a> - Please note: This project was created at the beginning of my studies which was longer than 2+ years ago. Hence, this code does not represent my current technical skills anymore.</p>
-
-
-
         <div class="gallery">
             <img src="/assets/pictures/Blinded_2.gif"><img src="/assets/pictures/Blinded_1.gif">
             <img src="/assets/pictures/blinded_1.jpg"><img src="/assets/pictures/blinded_3.jpg">
         </div>
-
-
-
-
-
         <p><br /><b> Team Members:</b> Emily Wysocki (Lead, Game Design, Sound Design), Alexandru Negoescu (Gameplay Programming), Anastasia Tataurova (2D Arts & Animation), Kaya Golder (3D Arts & Animation), Lucia Zhai (Supporting Artist), Fabian Schreck (Soundtrack)  | Michael Gebhart (Audio Programming & Sound Design) </p>
         <!--<p class="link"><a href="/projects.html"> See All Projects</a></p>-->
+        <div class="imprint">
+			<p><a href="/contact.html">IMPRINT</a></p>
+		</div>
     </div>
 </div>
-
-    </div>
+<div class="cookieBanner" id="cookieBannerID">
+	<p>This website only uses cookies on my project pages to allow for embedded YouTube videos.<br>Do you want to accept non-essential tracking to view any YouTube content on this website?</p>
+<div>
+<ul>
+<li><a href="javascript:enableCookies()">Accept 🍪</a></li>
+<li><a href="javascript:disableCookies()">Decline</a></li>
+</ul>
+</div>
+</div>
+</div>
 </body>
 </html>
