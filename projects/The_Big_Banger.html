@@ -21,7 +21,7 @@
 <!-- End Jekyll SEO tag -->
 
 </head>
-<body style= "background-image: url(/assets/pictures/the-big-banger_bg_2.png);">
+<body style= "background-image: url(/assets/pictures/the-big-banger_bg_2.png);" onload="javascript:checkCookiesAccepted()">
     <div class="content all">
         <script src="/menuScript.js"></script>
 <div class="topnav" id="topnavID">
@@ -46,8 +46,8 @@
     <p>2021 &middot; Augmented Reality Game &middot; Collaborative Project (7 Weeks) &middot; Unity / C#, AR Foundation</p>
 </div>
 <div class="content standard">
-
-    <div class="video-frame">
+    <p id="cookieNotifierID" display="none"><b>Please allow for Cookies to watch embedded YouTube content here.</b></p>
+    <div class="video-frame" id="youTubeVideoID">
         <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VYo-Qs806A0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
     </div>
 
@@ -76,9 +76,20 @@
         <p><br /><b> Team Members:</b> Jihoon Kim (Game Design & Project Management) | Daniel Baracotti (Game Design & Sound Design) | Robert Pavic & Sebastian Gerena (2D and 3D Arts, VFX) | Salma Mouselhy & Michael Gebhart (Programming) </p>
 
         <!--<p class="link"><a href="/projects.html"> See All Projects</a></p>-->
+        <div class="imprint">
+			<p><a href="/contact.html">IMPRINT</a></p>
+		</div>
     </div>
 </div>
-
-    </div>
+<div class="cookieBanner" id="cookieBannerID">
+	<p>This website only uses cookies on my project pages to allow for embedded YouTube videos.<br>Do you want to accept non-essential tracking to view any YouTube content on this website?</p>
+<div>
+<ul>
+<li><a href="javascript:enableCookies()">Accept 🍪</a></li>
+<li><a href="javascript:disableCookies()">Decline</a></li>
+</ul>
+</div>
+</div>
+</div>
 </body>
 </html>
