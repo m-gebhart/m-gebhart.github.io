@@ -1,11 +1,11 @@
 var allButtons;
 
-function enableCookies()() {
+function enableCookies() {
     localStorage.setItem("hasCookies", true);
     hideBanner();
 }
 
-function disableCookies()() {
+function disableCookies() {
     localStorage.setItem("hasCookies", false);
     hideBanner();
 }
@@ -46,4 +46,5 @@ const sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 
 };
+
 
