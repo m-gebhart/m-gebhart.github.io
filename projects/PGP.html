@@ -19,7 +19,7 @@
         {"dateModified":"2020-06-20T15:55:27+02:00","datePublished":"2020-06-20T15:55:27+02:00","description":"In A Dystopian Murder Show, a 2D action game, players control two mutants sharing one body. Trapped in deadly arenas, they try to survive against brutal hordes of monsters and get the highest score as possible. It is the very first collaborative project I developed during my studies.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/A_Dystopian_Murder_Show.html"},"url":"/projects/A_Dystopian_Murder_Show.html","headline":"A Dystopian Murder Show","@context":"http://schema.org"}</script>
 
 </head>
-<body style="background-image: url(/assets/pictures/pgp_bg.png);">
+<body style="background-image: url(/assets/pictures/pgp_bg.png);" onload="javascript:checkCookiesAccepted()">
     <div class="content all">
         <script src="/menuScript.js"></script>
         <div class="topnav" id="topnavID">
@@ -44,8 +44,8 @@
             <p>2022 &middot; C++ Application &middot; Solo Side Project (3 months) &middot; OpenGL / C++</p>
         </div>
         <div class="content standard">
-
-            <div class="pic_trailer">
+            <p id="cookieNotifierID" display="none"><b>Please allow for Cookies to watch embedded YouTube content here.</b></p>
+            <div class="pic_trailer" id="youTubeVideoID">
                 <img src="/assets/pictures/pgp_anim.gif"/>
             </div>
 
@@ -70,16 +70,23 @@
                   </ul>
                 </ul>
                 <p>CODE: <a href="https://github.com/m-gebhart/PGP_OpenGL" target="_blank" style="text-decoration: underline;">github.com/m-gebhart/PGP_OpenGL</a></p>
-
                 <div class="gallery">
                     <img src="/assets/pictures/pgp_5.png"><img src="/assets/pictures/pgp_2.png"><img src="/assets/pictures/pgp_3.png"><img src="/assets/pictures/pgp_4.png">
                 </div>
-
-
-
+                <div class="imprint">
+			        <p><a href="/contact.html">IMPRINT</a></p>
+		        </div>
             </div>
         </div>
-
-    </div>
+        <div class="cookieBanner" id="cookieBannerID">
+	<p>This website only uses cookies on my project pages to allow for embedded YouTube videos.<br>Do you want to accept non-essential tracking to view any YouTube content on this website?</p>
+<div>
+<ul>
+<li><a href="javascript:enableCookies()">Accept 🍪</a></li>
+<li><a href="javascript:disableCookies()">Decline</a></li>
+</ul>
+</div>
+</div>
+</div>
 </body>
 </html>
