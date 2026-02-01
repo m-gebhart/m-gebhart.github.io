@@ -8,4 +8,32 @@
     text-align: center;
     background-color: black !important;
     border-top: solid white 1px;
+
+}
+
+cookieBanner {
+    position: fixed;
+    bottom: 0px;
+    border-top: black solid 1px;
+    z-index: 2;
+    background-color: black;
+} 
+
+cookieBanner p {
+	color: white;
+    margin: 5px;
+}
+
+cookieBanner ul {
+    list-style-type: none;
+    display: flex;
+}
+
+cookieBanner li {
+	margin: auto;
+    text-align: center;
+    padding: 7px 10px;
+    text-decoration: none;
+    background-color: white;
+    border: black solid 1px;
 }
