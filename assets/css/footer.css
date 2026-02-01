@@ -11,7 +11,7 @@
 
 }
 
-cookieBanner {
+.cookieBanner {
     position: fixed;
     bottom: 0px;
     border-top: black solid 1px;
@@ -19,17 +19,17 @@ cookieBanner {
     background-color: black;
 } 
 
-cookieBanner p {
+.cookieBanner p {
 	color: white;
     margin: 5px;
 }
 
-cookieBanner ul {
+.cookieBanner ul {
     list-style-type: none;
     display: flex;
 }
 
-cookieBanner li {
+.cookieBanner li {
 	margin: auto;
     text-align: center;
     padding: 7px 10px;
@@ -37,3 +37,4 @@ cookieBanner li {
     background-color: white;
     border: black solid 1px;
 }
+
