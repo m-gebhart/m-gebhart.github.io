@@ -13,6 +13,7 @@ function disableCookies() {
 function hideBanner() {
     var banner = document.getElementById("cookieBannerID");
     banner.style.display = 'none';
+    hideCookieNotifier();
 }
 
 function showBanner() {
@@ -23,6 +24,9 @@ function showBanner() {
 function showYouTubeVideo() {
     var video = document.getElementById("youTubeVideoID");
     video.style.display = 'block';
+}
+
+function hideCookieNotifier(){
     var notifier = document.getElementById("cookieNotifierID");
     notifier.style.display = 'none';
 }
@@ -68,6 +72,7 @@ const sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 
 };
+
 
 
 
