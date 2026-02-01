@@ -3,6 +3,7 @@ var allButtons;
 function enableCookies() {
     localStorage.setItem("hasCookies", true);
     hideBanner();
+    showYouTubeVideo();
 }
 
 function disableCookies() {
@@ -72,6 +73,7 @@ const sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 
 };
+
 
 
 
