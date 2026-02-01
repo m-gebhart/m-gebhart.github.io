@@ -15,11 +15,22 @@ function hideBanner() {
     banner.style.display = 'none';
 }
 
-function checkCookieAccepted() {
+function showBanner() {
+    var banner = document.getElementById("cookieBannerID");
+    banner.style.display = 'block';
+}
+
+function showYouTubeVideo() {
+    var video = document.getElementById("youTubeVideoID");
+    video.style.display = 'block';
+}
+
+function checkCookiesAccepted() {
     if (localStorage.getItem("hasCookies")) {
-        var video = document.getElementById("youTubeVideoID");
-        video.style.display = 'block';
-        hideBanner();
+        showYouTubeVideo();
+    }
+    else {
+        showBanner();
     }
 }
 
@@ -54,6 +65,7 @@ const sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 
 };
+
 
 
 
