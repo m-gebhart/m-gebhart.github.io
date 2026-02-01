@@ -28,16 +28,19 @@
 .cookieBanner ul {
     list-style-type: none;
     display: flex;
+	color: black;
 }
 
 .cookieBanner li {
 	margin: auto;
-	color: black;
     text-align: center;
     padding: 7px 10px;
-    text-decoration: none;
     background-color: white;
     border: black double 1px;
 }
 
+.cookieBanner li a {
+	color: black;
+	text-decoration: none;
+}
 
