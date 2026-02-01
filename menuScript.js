@@ -28,8 +28,9 @@ function showYouTubeVideo() {
 }
 
 function checkCookiesAccepted() {
-    if (localStorage.getItem("hasCookies")) {
+    if (localStorage.getItem("hasCookies") == "true") {
         showYouTubeVideo();
+        hideBanner();
     }
     else {
         showBanner();
@@ -67,6 +68,7 @@ const sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 
 };
+
 
 
 
