@@ -23,6 +23,8 @@ function showBanner() {
 function showYouTubeVideo() {
     var video = document.getElementById("youTubeVideoID");
     video.style.display = 'block';
+    var notifier = document.getElementById("cookieNotifierID");
+    notifier.style.display = 'none';
 }
 
 function checkCookiesAccepted() {
@@ -65,6 +67,7 @@ const sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 
 };
+
 
 
 
