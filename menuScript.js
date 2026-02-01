@@ -13,7 +13,6 @@ function disableCookies() {
 function hideBanner() {
     var banner = document.getElementById("cookieBannerID");
     banner.style.display = 'none';
-    hideCookieNotifier();
 }
 
 function showBanner() {
@@ -35,6 +34,7 @@ function checkCookiesAccepted() {
     if (localStorage.getItem("hasCookies") == "true") {
         showYouTubeVideo();
         hideBanner();
+        hideCookieNotifier();
     }
     else {
         showBanner();
@@ -72,6 +72,7 @@ const sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 
 };
+
 
 
 
